@@ -327,12 +327,25 @@
         renderGames(filteredGames);
     }
 
+    // New function to get the base path from the URL
+    function getBasePath() {
+        const path = window.location.pathname;
+        const repoName = path.split('/')[1];
+        // Check if the path is not a root path and is not a user/org pages
+        if (repoName && !path.endsWith('.html') && !path.endsWith('.htm')) {
+            return `/${repoName}`;
+        }
+        return '';
+    }
+
     async function fetchData() {
+        const basePath = getBasePath();
+        
         try {
             const [gamesRes, updatesRes, dlcRes] = await Promise.all([
-                fetch('GAMES.json'),
-                fetch('UPDATES.json'),
-                fetch('DLC.json')
+                fetch(`${basePath}/GAMES.json`),
+                fetch(`${basePath}/UPDATES.json`),
+                fetch(`${basePath}/DLC.json`)
             ]);
 
             const gamesData = (await gamesRes.json()).DATA;
@@ -400,7 +413,6 @@
         const isDarkMode = document.body.classList.contains('dark-mode');
         darkModeToggle.textContent = isDarkMode ? '☀️ Modo Claro' : '🌙 Modo Nocturno';
     });
-
 </script>
 
 </body>
