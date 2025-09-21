@@ -1,0 +1,1194 @@
+{
+  "DATA": {
+    "http://192.168.1.171:8080/PS4/EP1805-CUSA39420_00-HKSILKSONGPS4000-A0100-V0100-CyB1K.pkg": {
+      "title_id": "CUSA39420",
+      "region": "EUR",
+      "name": "Hollow Knight: Silksong",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 2702901248,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA39420.png"
+    },
+    "http://192.168.1.171:8080/PS4/UP0102-PPSA01556_00-VILLAGEFULLGAMEX-A0100-V0113%20[%20High%20-%20Speed%20].pkg": {
+      "title_id": "PPSA01556",
+      "region": "USA",
+      "name": "Resident Evil Village Gold Edition",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 36339056640,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/PPSA01556.png"
+    },
+    "http://192.168.1.171:8080/PS4/[PROTOTYPE®] (CUSA01766)/Game-[PROTOTYPE®]-CUSA01766-1.00-1.00.pkg": {
+      "title_id": "CUSA01766",
+      "region": "EUR",
+      "name": "[PROTOTYPE®]",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 7624654848,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA01766.png"
+    },
+    "http://192.168.1.171:8080/PS4/[PROTOTYPE®2] (CUSA01765)/Game-[PROTOTYPE®2]-CUSA01765-1.00-1.00.pkg": {
+      "title_id": "CUSA01765",
+      "region": "EUR",
+      "name": "[PROTOTYPE®2]",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 9471393792,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA01765.png"
+    },
+    "http://192.168.1.171:8080/PS4/Zombie%20Army%204%20-%20Dead%20War%20(CUSA12583)/Game-Zombie%20Army%204%20-%20Dead%20War-CUSA12583-1.01-1.00.pkg": {
+      "title_id": "CUSA12583",
+      "region": "USA",
+      "name": "Zombie Army 4: Dead War",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 19525599232,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA12583.png"
+    },
+    "http://192.168.1.171:8080/PS4/Wreckfest%20(CUSA08548)/Game-Wreckfest-CUSA08548-1.01-1.00.pkg": {
+      "title_id": "CUSA08548",
+      "region": "USA",
+      "name": "Wreckfest",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 11249123328,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA08548.png"
+    },
+    "http://192.168.1.171:8080/PS4/World%20War%20Z%20(CUSA14046)/Game-World%20War%20Z-CUSA14046-1.02-1.00.pkg": {
+      "title_id": "CUSA14046",
+      "region": "USA",
+      "name": "World War Z",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 13538754560,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA14046.png"
+    },
+    "http://192.168.1.171:8080/PS4/Watch Dogs® - Legion (CUSA13034)/Game/Game-Watch Dogs® - Legion-CUSA13034-1.00-1.00.pkg": {
+      "title_id": "CUSA13034",
+      "region": "EUR",
+      "name": "Watch Dogs®: Legion",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 30901534720,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA13034.png"
+    },
+    "http://192.168.1.171:8080/PS4/V-Rally%204%20(CUSA09688)/Game-V-Rally%204-CUSA09688-1.00-1.00.pkg": {
+      "title_id": "CUSA09688",
+      "region": "EUR",
+      "name": "V-Rally 4",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 18660065280,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA09688.png"
+    },
+    "http://192.168.1.171:8080/PS4/Uncharted 4 - A Thief’s End™ (CUSA00341)/Game/Game-Uncharted 4 - A Thief’s End™-CUSA00341-1.00-1.00.pkg": {
+      "title_id": "CUSA00341",
+      "region": "USA",
+      "name": "Uncharted 4: A Thief’s End™",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 47435612160,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA00341.png"
+    },
+    "http://192.168.1.171:8080/PS4/Uncharted - The Nathan Drake Collection™ (CUSA02320)/Game/Game-Uncharted - The Nathan Drake Collection™-CUSA02320-1.00-1.00.pkg": {
+      "title_id": "CUSA02320",
+      "region": "USA",
+      "name": "Uncharted: The Nathan Drake Collection™",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 43445780480,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA02320.png"
+    },
+    "http://192.168.1.171:8080/PS4/Trials Fusion™ (CUSA00304)/[Downloadgameps3.com]-Base-CUSA00304.pkg": {
+      "title_id": "CUSA00304",
+      "region": "USA",
+      "name": "Trials Fusion™",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 5106171904,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA00304.png"
+    },
+    "http://192.168.1.171:8080/PS4/Tony Hawk's™ Pro Skater™ 3 + 4 (CUSA44732)/Game-Tony Hawk's™ Pro Skater™ 3 + 4-CUSA44732-1.03-1.00.pkg": {
+      "title_id": "CUSA44732",
+      "region": "USA",
+      "name": "Tony Hawk's™ Pro Skater™ 3 + 4",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 36795842560,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA44732.png"
+    },
+    "http://192.168.1.171:8080/PS4/Tony Hawk's™ Pro Skater™ 1 + 2 (CUSA20464)/Game-Tony Hawk's Pro Skater 1 + 2-CUSA20464-1.00-1.00.pkg": {
+      "title_id": "CUSA20464",
+      "region": "EUR",
+      "name": "Tony Hawk's Pro Skater 1 + 2",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 19871105024,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA20464.png"
+    },
+    "http://192.168.1.171:8080/PS4/Tony Hawk's® Pro Skater™ 5 (CUSA01412)/Game-Tony Hawk's® Pro Skater™ 5-CUSA01412-1.01-1.00.pkg": {
+      "title_id": "CUSA01412",
+      "region": "USA",
+      "name": "Tony Hawk's® Pro Skater™ 5",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 7840464896,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA01412.png"
+    },
+    "http://192.168.1.171:8080/PS4/Tomb%20Raider%20IV-VI%20Remastered%20(CUSA44837)/Game-Tomb%20Raider%20IV-VI%20Remastered-CUSA44837-1.00-1.00.pkg": {
+      "title_id": "CUSA44837",
+      "region": "USA",
+      "name": "Tomb Raider IV-VI Remastered",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 7685341184,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA44837.png"
+    },
+    "http://192.168.1.171:8080/PS4/Titanfall™ 2 (CUSA04027)/Game-Titanfall™ 2-CUSA04027-1.00-1.00.pkg": {
+      "title_id": "CUSA04027",
+      "region": "USA",
+      "name": "Titanfall™ 2",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 34198650880,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA04027.png"
+    },
+    "http://192.168.1.171:8080/PS4/The Last of Us™ Remastered (CUSA00552)/Game/Game-The Last of Us™ Remastered-CUSA00552-1.00-1.00.pkg": {
+      "title_id": "CUSA00552",
+      "region": "USA",
+      "name": "The Last of Us™ Remastered",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 43523964928,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA00552.png"
+    },
+    "http://192.168.1.171:8080/PS4/Teenage Mutant Ninja Turtles™ - Mutants in Manhattan (CUSA01997)/Game-Teenage Mutant Ninja Turtles™ - Mutants in Manhattan-CUSA01997-1.01-1.00.pkg": {
+      "title_id": "CUSA01997",
+      "region": "EUR",
+      "name": "Teenage Mutant Ninja Turtles™: Mutants in Manhattan",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 6487539712,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA01997.png"
+    },
+    "http://192.168.1.171:8080/PS4/Teenage%20Mutant%20Ninja%20Turtles%20-%20Mutants%20Unleashed%20(CUSA44075)/Game-Teenage%20Mutant%20Ninja%20Turtles%20-%20Mutants%20Unleashed-CUSA44075-1.00-1.00.pkg": {
+      "title_id": "CUSA44075",
+      "region": "EUR",
+      "name": "Teenage Mutant Ninja Turtles: Mutants Unleashed",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 5211422720,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA44075.png"
+    },
+    "http://192.168.1.171:8080/PS4/SONIC%20X%20SHADOW%20GENERATIONS%20(CUSA44422)/Game-SONIC%20X%20SHADOW%20GENERATIONS-CUSA44422-1.00-1.00.pkg": {
+      "title_id": "CUSA44422",
+      "region": "USA",
+      "name": "SONIC X SHADOW GENERATIONS",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 19980025856,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA44422.png"
+    },
+    "http://192.168.1.171:8080/PS4/SONIC%20SUPERSTARS%20(CUSA32740)/Game-SONIC%20SUPERSTARS-CUSA32740-1.00-1.00.pkg": {
+      "title_id": "CUSA32740",
+      "region": "EUR",
+      "name": "SONIC SUPERSTARS",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 5322440704,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA32740.png"
+    },
+    "http://192.168.1.171:8080/PS4/Sonic%20Mania%20(CUSA07010)/Game-Sonic%20Mania-CUSA07010-1.01-1.00.pkg": {
+      "title_id": "CUSA07010",
+      "region": "EUR",
+      "name": "Sonic Mania",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 327942144,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA07010.png"
+    },
+    "http://192.168.1.171:8080/PS4/Sonic%20Colors%20-%20Ultimate%20(CUSA19345)/Game-Sonic%20Colors%20-%20Ultimate-CUSA19345-1.05-1.00.pkg": {
+      "title_id": "CUSA19345",
+      "region": "USA",
+      "name": "Sonic Colors: Ultimate",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 6170804224,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA19345.png"
+    },
+    "http://192.168.1.171:8080/PS4/SnowRunner%20(CUSA17425)/UP4133-CUSA17425_00-SNOWRUNNERGAME00-A0100-V0160%20[%20High-Speed%20].pkg": {
+      "title_id": "CUSA17425",
+      "region": "USA",
+      "name": "SnowRunner",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 33376436224,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA17425.png"
+    },
+    "http://192.168.1.171:8080/PS4/Shadow%20of%20the%20Tomb%20Raider%20-%20DEFINITIVE%20EDITION%20(CUSA10872)/Game-Shadow%20of%20the%20Tomb%20Raider-CUSA10872-2.01-1.00.pkg": {
+      "title_id": "CUSA10872",
+      "region": "EUR",
+      "name": "Shadow of the Tomb Raider",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 32811515904,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA10872.png"
+    },
+    "http://192.168.1.171:8080/PS4/Sackboy™ - A Big Adventure (CUSA06313)/Game-Sackboy™ - A Big Adventure-CUSA06313-1.22-1.00.pkg": {
+      "title_id": "CUSA06313",
+      "region": "EUR",
+      "name": "Sackboy™: A Big Adventure",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 35483484160,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA06313.png"
+    },
+    "http://192.168.1.171:8080/PS4/Rocket League® (CUSA01163)/Game-Rocket League®-CUSA01163-2.39-1.00.pkg": {
+      "title_id": "CUSA01163",
+      "region": "USA",
+      "name": "Rocket League®",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 33149878272,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA01163.png"
+    },
+    "http://192.168.1.171:8080/PS4/Rise%20of%20the%20Tomb%20Raider%20(CUSA05794)/Game-Rise%20of%20the%20Tomb%20Raider-CUSA05794-1.01-1.00.pkg": {
+      "title_id": "CUSA05794",
+      "region": "USA",
+      "name": "Rise of the Tomb Raider",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 14210564096,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA05794.png"
+    },
+    "http://192.168.1.171:8080/PS4/RESIDENT%20EVIL%20REVELATIONS%202%20(CUSA00924)/Game/Game-RESIDENT%20EVIL%20REVELATIONS%202-CUSA00924-1.01-1.00.pkg": {
+      "title_id": "CUSA00924",
+      "region": "USA",
+      "name": "RESIDENT EVIL REVELATIONS 2",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 6429999104,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA00924.png"
+    },
+    "http://192.168.1.171:8080/PS4/RESIDENT%20EVIL%20REVELATIONS%20(CUSA06212)/Game-RESIDENT%20EVIL%20REVELATIONS-CUSA06212-1.01-1.00.pkg": {
+      "title_id": "CUSA06212",
+      "region": "EUR",
+      "name": "RESIDENT EVIL REVELATIONS",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 17458593792,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA06212.png"
+    },
+    "http://192.168.1.171:8080/PS4/RESIDENT%20EVIL%207%20biohazard%20Gold%20Edition%20(CUSA09643)/Game-RESIDENT%20EVIL%207%20biohazard%20Gold%20Edition-CUSA09643-1.01-1.00.pkg": {
+      "title_id": "CUSA09643",
+      "region": "USA",
+      "name": "RESIDENT EVIL 7 biohazard Gold Edition",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 30306533376,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA09643.png"
+    },
+    "http://192.168.1.171:8080/PS4/RESIDENT%20EVIL%206%20(CUSA03840)/Game-RESIDENT%20EVIL%206-CUSA03840-1.01-1.00.pkg": {
+      "title_id": "CUSA03840",
+      "region": "EUR",
+      "name": "RESIDENT EVIL 6",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 16202530816,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA03840.png"
+    },
+    "http://192.168.1.171:8080/PS4/Resident%20Evil%205%20-%20CUSA04284/Resident%20Evil%205%20-%20CUSA04284.pkg": {
+      "title_id": "CUSA04284",
+      "region": "EUR",
+      "name": "RESIDENT EVIL5",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 16521691136,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA04284.png"
+    },
+    "http://192.168.1.171:8080/PS4/Resident%20Evil%204%20(CUSA33387)/Game-Resident%20Evil%204-CUSA33387-1.00-1.00.pkg": {
+      "title_id": "CUSA33387",
+      "region": "USA",
+      "name": "Resident Evil 4",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 26152468480,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA33387.png"
+    },
+    "http://192.168.1.171:8080/PS4/Red%20Dead%20Redemption%202%20(CUSA03041)/Game-Red%20Dead%20Redemption%202-CUSA03041-1.00-1.00.pkg": {
+      "title_id": "CUSA03041",
+      "region": "USA",
+      "name": "Red Dead Redemption 2",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 85291302912,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA03041.png"
+    },
+    "http://192.168.1.171:8080/PS4/Red%20Dead%20Redemption%20(PPSA99078)/Game-Red%20Dead%20Redemption-PPSA99078-1.04-1.00.pkg": {
+      "title_id": "PPSA99078",
+      "region": "USA",
+      "name": "Red Dead Redemption",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 10634919936,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/PPSA99078.png"
+    },
+    "http://192.168.1.171:8080/PS4/Prince%20Of%20Persia%20-%20The%20Lost%20Crown%20(CUSA36582)/Game-Prince%20Of%20Persia%20-%20The%20Lost%20Crown-CUSA36582-1.00-1.00.pkg": {
+      "title_id": "CUSA36582",
+      "region": "EUR",
+      "name": "Prince Of Persia: The Lost Crown",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 11148460032,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA36582.png"
+    },
+    "http://192.168.1.171:8080/PS4/Persona%203%20Reload%20(CUSA37521)/Game-Persona%203%20Reload-CUSA37521-1.00-1.00.pkg": {
+      "title_id": "CUSA37521",
+      "region": "USA",
+      "name": "Persona 3 Reload",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 24449712128,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA37521.png"
+    },
+    "http://192.168.1.171:8080/PS4/PAYDAY%202%20-%20CRIMEWAVE%20EDITION%20(CUSA01761)/Game/Game-PAYDAY%202%20-%20CRIMEWAVE%20EDITION-CUSA01761-1.01-1.00.pkg": {
+      "title_id": "CUSA01761",
+      "region": "EUR",
+      "name": "PAYDAY 2: CRIMEWAVE EDITION",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 10093658112,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA01761.png"
+    },
+    "http://192.168.1.171:8080/PS4/PAC-MAN™ Championship Edition 2 + Arcade Game Series™ (CUSA06906)/Game-PAC-MAN™ Championship Edition 2 + Arcade Game Series™-CUSA06906-1.00-1.00.pkg": {
+      "title_id": "CUSA06906",
+      "region": "USA",
+      "name": "PAC-MAN™ Championship Edition 2 + Arcade Game Series™",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 2570715136,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA06906.png"
+    },
+    "http://192.168.1.171:8080/PS4/ONRUSH™ (CUSA09559)/Game/Game-ONRUSH™-CUSA09559-1.01-1.00.pkg": {
+      "title_id": "CUSA09559",
+      "region": "EUR",
+      "name": "ONRUSH™",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 12989956096,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA09559.png"
+    },
+    "http://192.168.1.171:8080/PS4/NINJA%20GAIDEN%203%20Razors%20Edge%20(CUSA24123)/NINJA.GAIDEN.3.Razors.Edge_CUSA24123_v1.00_[8.00]_OPOISSO893.pkg": {
+      "title_id": "CUSA24123",
+      "region": "USA",
+      "name": "NINJA GAIDEN 3: Razor's Edge",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 3909877760,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA24123.png"
+    },
+    "http://192.168.1.171:8080/PS4/Need for Speed™ Payback (CUSA05986)/Game-Need for Speed™ Payback-CUSA05986-1.00-1.00.pkg": {
+      "title_id": "CUSA05986",
+      "region": "EUR",
+      "name": "Need for Speed™ Payback",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 19256442880,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA05986.png"
+    },
+    "http://192.168.1.171:8080/PS4/Need for Speed™ Heat (CUSA15081)/Game-Need for Speed™ Heat-CUSA15081-1.00-1.00.pkg": {
+      "title_id": "CUSA15081",
+      "region": "USA",
+      "name": "Need for Speed™ Heat",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 26304643072,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA15081.png"
+    },
+    "http://192.168.1.171:8080/PS4/Need%20for%20Speed%20Underground%202%20[EU]%20[FiXed]%20[60FPS]%20(SLES52725)/Game-Need%20for%20Speed%20Underground%202%20[EU]%20[FiXed]%20[60FPS]-SLES52725-1.00-1.00.pkg": {
+      "title_id": "SLES52725",
+      "region": "USA",
+      "name": "Need for Speed Underground 2 [EU] [FiXed] [60FPS]",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 2974810112,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/SLES52725.png"
+    },
+    "http://192.168.1.171:8080/PS4/NEED%20FOR%20SPEED%20UNDERGROUND%20(SLUS20811)/Game-NEED%20FOR%20SPEED%20UNDERGROUND-SLUS20811-1.00-1.00.pkg": {
+      "title_id": "SLUS20811",
+      "region": "USA",
+      "name": "NEED FOR SPEED UNDERGROUND",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 2757230592,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/SLUS20811.png"
+    },
+    "http://192.168.1.171:8080/PS4/NASCAR%2021%20-%20Ignition%20(CUSA27898)/Game-NASCAR%2021%20-%20Ignition-CUSA27898-1.01-1.00.pkg": {
+      "title_id": "CUSA27898",
+      "region": "EUR",
+      "name": "NASCAR 21: Ignition",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 12268797952,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA27898.png"
+    },
+    "http://192.168.1.171:8080/PS4/MudRunner%20-%20A%20Spintires%20game%20(CUSA09958)/Game-MudRunner%20-%20A%20Spintires%20game-CUSA09958-1.01-1.00.pkg": {
+      "title_id": "CUSA09958",
+      "region": "EUR",
+      "name": "MudRunner: A Spintires game",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 932446208,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA09958.png"
+    },
+    "http://192.168.1.171:8080/PS4/MORTALKOMBAT11-LAT-Update.v1.30.ALL.DLC.MOD-RwO-[DLPSGAME.COM]/Game-Mortal%20Kombat%2011-CUSA11518-1.00-1.00.pkg": {
+      "title_id": "CUSA11518",
+      "region": "USA",
+      "name": "Mortal Kombat 11",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 39714488320,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA11518.png"
+    },
+    "http://192.168.1.171:8080/PS4/Minecraft%20Dungeons%20(CUSA18779)/Game-Minecraft%20Dungeons-CUSA18779-1.03-1.00.pkg": {
+      "title_id": "CUSA18779",
+      "region": "USA",
+      "name": "Minecraft Dungeons",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 1488715776,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA18779.png"
+    },
+    "http://192.168.1.171:8080/PS4/METAL%20GEAR%20SOLID%20V%20-%20THE%20PHANTOM%20PAIN%20(CUSA01154)/Game-METAL%20GEAR%20SOLID%20V%20-%20THE%20PHANTOM%20PAIN-CUSA01154-1.02-1.00.pkg": {
+      "title_id": "CUSA01154",
+      "region": "EUR",
+      "name": "METAL GEAR SOLID V: THE PHANTOM PAIN",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 26972979200,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA01154.png"
+    },
+    "http://192.168.1.171:8080/PS4/Metal%20Gear%20Solid%20V%20-%20The%20Definitive%20Experience%20(CUSA05610)/Game-Metal%20Gear%20Solid%20V%20-%20The%20Definitive%20Experience-CUSA05610-1.00-1.11.pkg": {
+      "title_id": "CUSA05610",
+      "region": "USA",
+      "name": "Metal Gear Solid V: The Definitive Experience",
+      "version": "01.11",
+      "tipe": "GAME",
+      "size": 32503234560,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA05610.png"
+    },
+    "http://192.168.1.171:8080/PS4/METAL%20GEAR%20SOLID%20-MASTER%20COLLECTION%20Vol.1%20BONUS%20CONTENT%20(CUSA43222)/Game/Game-METAL%20GEAR%20SOLID%20-MASTER%20COLLECTION%20Vol.1%20BONUS%20CONTENT-CUSA43222-1.00-1.00.pkg": {
+      "title_id": "CUSA43222",
+      "region": "EUR",
+      "name": "METAL GEAR SOLID:MASTER COLLECTION Vol.1 BONUS CONTENT",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 231604224,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA43222.png"
+    },
+    "http://192.168.1.171:8080/PS4/Marvel's%20Spider-Man%20-%20Miles%20Morales%20(CUSA17722)/Game-Marvel's%20Spider-Man%20-%20Miles%20Morales-CUSA17722-1.00-1.00.pkg": {
+      "title_id": "CUSA17722",
+      "region": "USA",
+      "name": "Marvel's Spider-Man: Miles Morales",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 41080520704,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA17722.png"
+    },
+    "http://192.168.1.171:8080/PS4/Marvel's%20Spider-Man%20(CUSA02299)/Game-Marvel's%20Spider-Man-CUSA02299-1.00-1.00.pkg": {
+      "title_id": "CUSA02299",
+      "region": "USA",
+      "name": "Marvel's Spider-Man",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 43418714112,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA02299.png"
+    },
+    "http://192.168.1.171:8080/PS4/Marvel's%20Guardians%20of%20the%20Galaxy%20(CUSA24103)/Game/Game-Marvel's%20Guardians%20of%20the%20Galaxy-CUSA24103-1.01-1.00.pkg": {
+      "title_id": "CUSA24103",
+      "region": "EUR",
+      "name": "Marvel's Guardians of the Galaxy",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 44861751296,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA24103.png"
+    },
+    "http://192.168.1.171:8080/PS4/MARVEL%20vs.%20CAPCOM%20Fighting%20Collection%20-%20Arcade%20Classics%20(CUSA46747)/Game-MARVEL%20vs.%20CAPCOM%20Fighting%20Collection%20-%20Arcade%20Classics-CUSA46747-1.00-1.00.pkg": {
+      "title_id": "CUSA46747",
+      "region": "JAP",
+      "name": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 3461349376,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA46747.png"
+    },
+    "http://192.168.1.171:8080/PS4/MARVEL%20VS.%20CAPCOM%20-%20INFINITE%20(CUSA06400)/Game-MARVEL%20VS.%20CAPCOM%20-%20INFINITE-CUSA06400-1.01-1.00.pkg": {
+      "title_id": "CUSA06400",
+      "region": "USA",
+      "name": "MARVEL VS. CAPCOM: INFINITE",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 38125371392,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA06400.png"
+    },
+    "http://192.168.1.171:8080/PS4/Mafia%20II%20-%20Definitive%20Edition%20(CUSA17761)/Game-Mafia%20II%20-%20Definitive%20Edition-CUSA17761-1.00-1.00.pkg": {
+      "title_id": "CUSA17761",
+      "region": "EUR",
+      "name": "Mafia II: Definitive Edition",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 45579698176,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA17761.png"
+    },
+    "http://192.168.1.171:8080/PS4/Mafia%20-%20Definitive%20Edition%20(CUSA18097)/Game-Mafia%20-%20Definitive%20Edition-CUSA18097-1.00-1.00.pkg": {
+      "title_id": "CUSA18097",
+      "region": "USA",
+      "name": "Mafia: Definitive Edition",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 37057462272,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA18097.png"
+    },
+    "http://192.168.1.171:8080/PS4/LittleBigPlanet™3 (CUSA00810)/Game/Game-LittleBigPlanet™3-CUSA00810-1.01-1.00.pkg": {
+      "title_id": "CUSA00810",
+      "region": "USA",
+      "name": "LittleBigPlanet™3",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 11875778560,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA00810.png"
+    },
+    "http://192.168.1.171:8080/PS4/Just%20Cause%204%20(CUSA09254)/Game-Just%20Cause%204-CUSA09254-1.01-1.00.pkg": {
+      "title_id": "CUSA09254",
+      "region": "USA",
+      "name": "Just Cause 4",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 42008313856,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA09254.png"
+    },
+    "http://192.168.1.171:8080/PS4/HOT WHEELS UNLEASHED™ 2 - Turbocharged (CUSA35582)/Game-HOT WHEELS UNLEASHED™ 2 - Turbocharged-CUSA35582-1.00-1.00.pkg": {
+      "title_id": "CUSA35582",
+      "region": "EUR",
+      "name": "HOT WHEELS UNLEASHED™ 2 - Turbocharged",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 11148656640,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA35582.png"
+    },
+    "http://192.168.1.171:8080/PS4/HOGWARTS%20LEGACY%20(CUSA12824)/UP1018-CUSA12824_00-HOGWARTSLEGACY01-A0100-V0100-CyB1K.pkg": {
+      "title_id": "CUSA12824",
+      "region": "USA",
+      "name": "Hogwarts Legacy",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 38848167936,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA12824.png"
+    },
+    "http://192.168.1.171:8080/PS4/GRID%20Legends%20(CUSA28260)/Game/Game-GRID%20Legends-CUSA28260-1.00-1.00.pkg": {
+      "title_id": "CUSA28260",
+      "region": "EUR",
+      "name": "GRID Legends",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 30338383872,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA28260.png"
+    },
+    "http://192.168.1.171:8080/PS4/GRID%20(CUSA10777)/Game/Game-GRID-CUSA10777-1.01-1.00.pkg": {
+      "title_id": "CUSA10777",
+      "region": "EUR",
+      "name": "GRID",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 38707462144,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA10777.png"
+    },
+    "http://192.168.1.171:8080/PS4/Grand%20Theft%20Auto%20V%20(CUSA00419)/Game-Grand%20Theft%20Auto%20V-CUSA00419-1.00-1.00.pkg": {
+      "title_id": "CUSA00419",
+      "region": "USA",
+      "name": "Grand Theft Auto V",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 44760039424,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA00419.png"
+    },
+    "http://192.168.1.171:8080/PS4/Gran Turismo™ 7 (CUSA24767)/Game-Gran Turismo™ 7-CUSA24767-1.55-1.00.pkg": {
+      "title_id": "CUSA24767",
+      "region": "EUR",
+      "name": "Gran Turismo™ 7",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 95967313920,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA24767.png"
+    },
+    "http://192.168.1.171:8080/PS4/Gran Turismo®SPORT (CUSA03220)/Game-Gran Turismo®Sport-CUSA03220-1.00-1.00.pkg": {
+      "title_id": "CUSA03220",
+      "region": "USA",
+      "name": "Gran Turismo®Sport",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 42994761728,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA03220.png"
+    },
+    "http://192.168.1.171:8080/PS4/God of War Ragnarök (CUSA34384)/Game-God of War Ragnarök-CUSA34384-1.00-1.00.pkg": {
+      "title_id": "CUSA34384",
+      "region": "USA",
+      "name": "God of War Ragnarök",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 90562428928,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA34384.png"
+    },
+    "http://192.168.1.171:8080/PS4/God%20of%20War%20(CUSA07410)/Game-God%20of%20War-CUSA07410-1.00-1.00.pkg": {
+      "title_id": "CUSA07410",
+      "region": "EUR",
+      "name": "God of War",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 38701432832,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA07410.png"
+    },
+    "http://192.168.1.171:8080/PS4/Ghost%20of%20Tsushima%20(CUSA13323)/Game-Ghost%20of%20Tsushima-CUSA13323-2.24-1.00.pkg": {
+      "title_id": "CUSA13323",
+      "region": "EUR",
+      "name": "Ghost of Tsushima",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 48654188544,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA13323.png"
+    },
+    "http://192.168.1.171:8080/PS4/FINAL%20FANTASY%20VII%20REMAKE%20(CUSA07211)/Game-FINAL%20FANTASY%20VII%20REMAKE-CUSA07211-1.01-1.00.pkg": {
+      "title_id": "CUSA07211",
+      "region": "USA",
+      "name": "FINAL FANTASY VII REMAKE",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 85926019072,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA07211.png"
+    },
+    "http://192.168.1.171:8080/PS4/FIFA%2023%20(CUSA31873)/Game/Game-FIFA%2023-CUSA31873-1.00-1.00.pkg": {
+      "title_id": "CUSA31873",
+      "region": "EUR",
+      "name": "FIFA 23",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 41286303744,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA31873.png"
+    },
+    "http://192.168.1.171:8080/PS4/Far Cry® New Dawn (CUSA13917)/Game-Far Cry® New Dawn-CUSA13917-1.00-1.00.pkg": {
+      "title_id": "CUSA13917",
+      "region": "USA",
+      "name": "Far Cry® New Dawn",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 21164589056,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA13917.png"
+    },
+    "http://192.168.1.171:8080/PS4/Far Cry® 5 (CUSA05904)/Game-Far Cry® 5-CUSA05904-1.00-1.00.pkg": {
+      "title_id": "CUSA05904",
+      "region": "USA",
+      "name": "Far Cry® 5",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 31971213312,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA05904.png"
+    },
+    "http://192.168.1.171:8080/PS4/F1® 24 (CUSA44372)/Game-F1® 24-CUSA44372-1.01-1.00.pkg": {
+      "title_id": "CUSA44372",
+      "region": "EUR",
+      "name": "F1® 24",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 39300366336,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA44372.png"
+    },
+    "http://192.168.1.171:8080/PS4/Expeditions%20-%20A%20Mudrunner%20Game%20(CUSA44233)/Game/Game-Expeditions%20-%20A%20Mudrunner%20Game-CUSA44233-1.06-1.00.pkg": {
+      "title_id": "CUSA44233",
+      "region": "EUR",
+      "name": "Expeditions: A Mudrunner Game",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 12367495168,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA44233.png"
+    },
+    "http://192.168.1.171:8080/PS4/EA%20SPORTS%20FC%2025%20(CUSA46399)/Game/Game-EA%20SPORTS%20FC%2025-CUSA46399-1.00-1.00.pkg": {
+      "title_id": "CUSA46399",
+      "region": "EUR",
+      "name": "EA SPORTS FC 25",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 44870664192,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA46399.png"
+    },
+    "http://192.168.1.171:8080/PS4/Dying%20Light%20(CUSA02010)/Game-Dying%20Light-CUSA02010-1.00-1.00.pkg": {
+      "title_id": "CUSA02010",
+      "region": "EUR",
+      "name": "Dying Light",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 12863864832,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA02010.png"
+    },
+    "http://192.168.1.171:8080/PS4/DRIVECLUB™ (CUSA00093)/Game-DRIVECLUB™-CUSA00093-1.01-1.00.pkg": {
+      "title_id": "CUSA00093",
+      "region": "USA",
+      "name": "DRIVECLUB™",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 15753019392,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA00093.png"
+    },
+    "http://192.168.1.171:8080/PS4/DRAGON%20BALL%20Z%20-%20KAKAROT%20(CUSA14835)/Game-DRAGON%20BALL%20Z%20-%20KAKAROT-CUSA14835-1.00-1.00.pkg": {
+      "title_id": "CUSA14835",
+      "region": "EUR",
+      "name": "DRAGON BALL Z: KAKAROT",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 32901300224,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA14835.png"
+    },
+    "http://192.168.1.171:8080/PS4/DRAGON%20BALL%20FighterZ%20(CUSA08992)/Game-DRAGON%20BALL%20FighterZ-CUSA08992-1.00-1.00.pkg": {
+      "title_id": "CUSA08992",
+      "region": "EUR",
+      "name": "DRAGON BALL FighterZ",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 4150984704,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA08992.png"
+    },
+    "http://192.168.1.171:8080/PS4/DOOM%20Eternal%20(CUSA13338)/Game-DOOM%20Eternal-CUSA13338-1.00-1.00.pkg": {
+      "title_id": "CUSA13338",
+      "region": "USA",
+      "name": "DOOM Eternal",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 37941149696,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA13338.png"
+    },
+    "http://192.168.1.171:8080/PS4/DmC Devil May Cry™ - Definitive Edition (CUSA01022)/Game-DmC Devil May Cry™ - Definitive Edition-CUSA01022-1.00-1.00.pkg": {
+      "title_id": "CUSA01022",
+      "region": "EUR",
+      "name": "DmC Devil May Cry™: Definitive Edition",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 18228510720,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA01022.png"
+    },
+    "http://192.168.1.171:8080/PS4/DiRT%20Rally%202.0%20(CUSA12819)/Game/Game-DiRT%20Rally%202.0-CUSA12819-1.01-1.00.pkg": {
+      "title_id": "CUSA12819",
+      "region": "USA",
+      "name": "DiRT Rally 2.0",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 27110408192,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA12819.png"
+    },
+    "http://192.168.1.171:8080/PS4/DiRT%20Rally%20(CUSA03648)/Game-DiRT%20Rally-CUSA03648-1.01-1.00.pkg": {
+      "title_id": "CUSA03648",
+      "region": "EUR",
+      "name": "DiRT Rally",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 40667709440,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA03648.png"
+    },
+    "http://192.168.1.171:8080/PS4/DIRT 5™ (CUSA16195)/Game-DIRT 5™-CUSA16195-1.01-1.00.pkg": {
+      "title_id": "CUSA16195",
+      "region": "USA",
+      "name": "DIRT 5™",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 26578059264,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA16195.png"
+    },
+    "http://192.168.1.171:8080/PS4/Devil May Cry™ HD Collection (CUSA09263)/Game-Devil May Cry™ HD Collection-CUSA09263-1.01-1.00.pkg": {
+      "title_id": "CUSA09263",
+      "region": "EUR",
+      "name": "Devil May Cry™ HD Collection",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 11995971584,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA09263.png"
+    },
+    "http://192.168.1.171:8080/PS4/DEATH STRANDING™ (CUSA12606)/Game/Game-DEATH STRANDING™-CUSA12606-1.01-1.00.pkg": {
+      "title_id": "CUSA12606",
+      "region": "EUR",
+      "name": "DEATH STRANDING™",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 48075636736,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA12606.png"
+    },
+    "http://192.168.1.171:8080/PS4/Deadpool%20(CUSA03245)/Game-Deadpool-CUSA03245-1.01-1.00.pkg": {
+      "title_id": "CUSA03245",
+      "region": "USA",
+      "name": "Deadpool",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 5502009344,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA03245.png"
+    },
+    "http://192.168.1.171:8080/PS4/Dead%20Island%202%20(CUSA27043)/Game-Dead%20Island%202-CUSA27043-1.10-1.00.pkg": {
+      "title_id": "CUSA27043",
+      "region": "EUR",
+      "name": "Dead Island 2",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 25350832128,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA27043.png"
+    },
+    "http://192.168.1.171:8080/PS4/Cyberpunk%202077%20(CUSA16596)/Game-Cyberpunk%202077-CUSA16596-1.61-1.00.pkg": {
+      "title_id": "CUSA16596",
+      "region": "USA",
+      "name": "Cyberpunk 2077",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 66901049344,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA16596.png"
+    },
+    "http://192.168.1.171:8080/PS4/Cuphead%20(CUSA20499)/Game-Cuphead-CUSA20499-1.05-1.00.pkg": {
+      "title_id": "CUSA20499",
+      "region": "USA",
+      "name": "Cuphead",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 5418582016,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA20499.png"
+    },
+    "http://192.168.1.171:8080/PS4/Crash™ Team Racing Nitro-Fueled (CUSA13795)/Game-Crash™ Team Racing Nitro-Fueled-CUSA13795-1.00-1.00.pkg": {
+      "title_id": "CUSA13795",
+      "region": "USA",
+      "name": "Crash™ Team Racing Nitro-Fueled",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 13521256448,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA13795.png"
+    },
+    "http://192.168.1.171:8080/PS4/Crash%20Bandicoot%20N.%20Sane%20Trilogy%20(CUSA07399)/Game-Crash%20Bandicoot%20N.%20Sane%20Trilogy-CUSA07399-1.00-1.00.pkg": {
+      "title_id": "CUSA07399",
+      "region": "EUR",
+      "name": "Crash Bandicoot N. Sane Trilogy",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 22717267968,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA07399.png"
+    },
+    "http://192.168.1.171:8080/PS4/Call of Duty® Black Ops 6 (CUSA34029)/Game-Call of Duty® Black Ops 6-CUSA34029-1.58-1.00.pkg": {
+      "title_id": "CUSA34029",
+      "region": "EUR",
+      "name": "Call of Duty® Black Ops 6",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 150790275072,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA34029.png"
+    },
+    "http://192.168.1.171:8080/PS4/Call of Duty® - WWII (CUSA05969)/Game-Call of Duty® - WWII-CUSA05969-1.00-1.00.pkg": {
+      "title_id": "CUSA05969",
+      "region": "USA",
+      "name": "Call of Duty®: WWII",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 47488827392,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA05969.png"
+    },
+    "http://192.168.1.171:8080/PS4/Call of Duty® - Vanguard (CUSA24041)/Game-Call of Duty® - Vanguard-CUSA24041-1.00-1.00.pkg": {
+      "title_id": "CUSA24041",
+      "region": "USA",
+      "name": "Call of Duty®: Vanguard",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 21766209536,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA24041.png"
+    },
+    "http://192.168.1.171:8080/PS4/Call of Duty® - Black Ops Cold War (CUSA15010)/Game-Call of Duty® - Black Ops Cold War-CUSA15010-1.00-1.00.pkg": {
+      "title_id": "CUSA15010",
+      "region": "USA",
+      "name": "Call of Duty®: Black Ops Cold War",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 13619757056,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA15010.png"
+    },
+    "http://192.168.1.171:8080/PS4/Burnout%20Paradise%20Remastered%20(CUSA10866)/Game-Burnout%20Paradise%20Remastered-CUSA10866-1.00-1.00.pkg": {
+      "title_id": "CUSA10866",
+      "region": "USA",
+      "name": "Burnout Paradise Remastered",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 7077953536,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA10866.png"
+    },
+    "http://192.168.1.171:8080/PS4/Borderlands® - Game of the Year Edition (CUSA10455)/Game-Borderlands® - Game of the Year Edition-CUSA10455-1.00-1.00.pkg": {
+      "title_id": "CUSA10455",
+      "region": "USA",
+      "name": "Borderlands®: Game of the Year Edition",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 12132417536,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA10455.png"
+    },
+    "http://192.168.1.171:8080/PS4/BLEACH%20Rebirth%20of%20Souls%20(CUSA25090)/Game-BLEACH%20Rebirth%20of%20Souls-CUSA25090-1.00-1.00.pkg": {
+      "title_id": "CUSA25090",
+      "region": "JAP",
+      "name": "BLEACH Rebirth of Souls",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 28972285952,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA25090.png"
+    },
+    "http://192.168.1.171:8080/PS4/Bendy%20and%20the%20Dark%20Revival%20(CUSA38355)/Game-Bendy%20and%20the%20Dark%20Revival-CUSA38355-1.00-1.00.pkg": {
+      "title_id": "CUSA38355",
+      "region": "EUR",
+      "name": "Bendy and the Dark Revival",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 3893821440,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA38355.png"
+    },
+    "http://192.168.1.171:8080/PS4/Bee%20Simulator%20(CUSA15604)/Game-Bee%20Simulator-CUSA15604-1.02-1.00.pkg": {
+      "title_id": "CUSA15604",
+      "region": "EUR",
+      "name": "Bee Simulator",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 7919435776,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA15604.png"
+    },
+    "http://192.168.1.171:8080/PS4/BATMAN™ - ARKHAM KNIGHT (CUSA00135)/Game-BATMAN™ - ARKHAM KNIGHT-CUSA00135-1.00-1.00.pkg": {
+      "title_id": "CUSA00135",
+      "region": "EUR",
+      "name": "BATMAN™: ARKHAM KNIGHT",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 46676967424,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA00135.png"
+    },
+    "http://192.168.1.171:8080/PS4/Batman%20-%20Return%20to%20Arkham%20-%20Arkham%20City%20(CUSA02000)/Game-Batman%20-%20Return%20to%20Arkham%20-%20Arkham%20City-CUSA02000-1.00-1.00.pkg": {
+      "title_id": "CUSA02000",
+      "region": "EUR",
+      "name": "Batman: Return to Arkham - Arkham City",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 29801971712,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA02000.png"
+    },
+    "http://192.168.1.171:8080/PS4/Assetto%20Corsa%20Competizione%20(CUSA17266)/Game-Assetto%20Corsa%20Competizione-CUSA17266-1.00-1.00.pkg": {
+      "title_id": "CUSA17266",
+      "region": "EUR",
+      "name": "Assetto Corsa Competizione",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 9656991744,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA17266.png"
+    },
+    "http://192.168.1.171:8080/PS4/Assetto%20Corsa%20(CUSA01830)/Game/Game-Assetto%20Corsa-CUSA01830-1.02-1.00.pkg": {
+      "title_id": "CUSA01830",
+      "region": "USA",
+      "name": "Assetto Corsa",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 13293322240,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA01830.png"
+    },
+    "http://192.168.1.171:8080/PS4/Assassin's Creed® Valhalla (CUSA18522)-ok/Game-Assassin's Creed® Valhalla-CUSA18522-7.20-1.00.pkg": {
+      "title_id": "CUSA18522",
+      "region": "USA",
+      "name": "Assassin's Creed® Valhalla",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 127938658304,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA18522.png"
+    },
+    "http://192.168.1.171:8080/PS4/Assassin's Creed® Rogue Remastered (CUSA10123)/Game-Assassin's Creed® Rogue Remastered-CUSA10123-1.00-1.00.pkg": {
+      "title_id": "CUSA10123",
+      "region": "EUR",
+      "name": "Assassin's Creed® Rogue Remastered",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 9844293632,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA10123.png"
+    },
+    "http://192.168.1.171:8080/PS4/Assassin's Creed® Origins (CUSA05625)/Game/Game-Assassin's Creed® Origins-CUSA05625-1.00-1.00.pkg": {
+      "title_id": "CUSA05625",
+      "region": "EUR",
+      "name": "Assassin's Creed® Origins",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 42522443776,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA05625.png"
+    },
+    "http://192.168.1.171:8080/PS4/Assassin's Creed® Odyssey (CUSA09311)-ok/Game-Assassin's Creed® Odyssey-CUSA09311-1.00-1.00.pkg": {
+      "title_id": "CUSA09311",
+      "region": "USA",
+      "name": "Assassin's Creed® Odyssey",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 44117590016,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA09311.png"
+    },
+    "http://192.168.1.171:8080/PS4/Assassin's Creed® Mirage (CUSA33151)/Game-Assassin's Creed® Mirage-CUSA33151-1.00-1.00.pkg": {
+      "title_id": "CUSA33151",
+      "region": "EUR",
+      "name": "Assassin's Creed® Mirage",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 23344971776,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA33151.png"
+    },
+    "http://192.168.1.171:8080/PS4/Assassin's Creed® III Remastered (CUSA11711)/Game-Assassin's Creed® III Remastered-CUSA11711-1.00-1.00.pkg": {
+      "title_id": "CUSA11711",
+      "region": "USA",
+      "name": "Assassin's Creed® III Remastered",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 38141755392,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA11711.png"
+    },
+    "http://192.168.1.171:8080/PS4/ACA%20NEOGEO%20METAL%20SLUG%205%20(CUSA13721)/Game-ACA%20NEOGEO%20METAL%20SLUG%205-CUSA13721-1.00-1.00.pkg": {
+      "title_id": "CUSA13721",
+      "region": "USA",
+      "name": "ACA NEOGEO METAL SLUG 5",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 162856960,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA13721.png"
+    },
+    "http://192.168.1.171:8080/PS4/ACA%20NEOGEO%20METAL%20SLUG%203%20(CUSA10968)/Game-ACA%20NEOGEO%20METAL%20SLUG%203-CUSA10968-1.00-1.00.pkg": {
+      "title_id": "CUSA10968",
+      "region": "USA",
+      "name": "ACA NEOGEO METAL SLUG 3",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 157679616,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA10968.png"
+    },
+    "http://192.168.1.171:8080/PS4/ACA%20NEOGEO%20METAL%20SLUG%20(CUSA06874)/Game-ACA%20NEOGEO%20METAL%20SLUG-CUSA06874-1.00-1.00.pkg": {
+      "title_id": "CUSA06874",
+      "region": "JAP",
+      "name": "ACA NEOGEO METAL SLUG",
+      "version": "01.00",
+      "tipe": "GAME",
+      "size": 94699520,
+      "min_fw": "null",
+      "cover_url": "http://192.168.1.171:8080/CUSA06874.png"
+    }
+  }
+}
