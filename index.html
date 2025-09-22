@@ -3,45 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios EME INGENIERÍA</title>
+    <title>EME Ingeniería</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://i.ibb.co/L5hYw4k/emechile.png" alt="Logo de EME Ingeniería Chile Limitada" class="logo">
+            <img src="logo_y_giro.png" alt="EME Ingeniería Chile Ltda." class="logo">
         </div>
-        
-        <div class="title-section">
-            <h1 class="main-title">Formularios EME INGENIERÍA</h1>
-            <button id="theme-toggle" class="theme-toggle">Modo Oscuro</button>
-        </div>
-
+        <h1 class="main-title">Portafolio de Formularios</h1>
+        <p class="subtitle">Selecciona el formulario que necesitas completar:</p>
         <div class="form-list">
-            <a href="evaluacion-electromovilidad.html" class="form-link">Evaluación para Electromovilidad</a>
-            <a href="instalacion-electromovilidad.html" class="form-link">Instalación Electromovilidad</a>
-            <a href="evaluacion-energia-renovable.html" class="form-link">Evaluación para Energía Renovable</a>
-            <a href="#" class="form-link">Instalación Energía Renovable (Próximamente)</a>
+            <a href="evaluacion-electromovilidad.html" class="form-link">Formulario de Evaluación de Electromovilidad</a>
+            <a href="instalacion-electromovilidad.html" class="form-link">Formulario de Instalación de Electromovilidad</a>
+            <a href="evaluacion-renovable.html" class="form-link">Formulario de Evaluación de Energía Renovable</a>
+            <a href="instalacion-renovable.html" class="form-link">Formulario de Instalación de Energía Renovable</a>
         </div>
     </div>
-
-    <script>
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const body = document.body;
-
-        const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-        if (isDarkMode) {
-            body.classList.add('dark-mode');
-            themeToggleBtn.textContent = 'Modo Claro';
-        }
-
-        themeToggleBtn.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            const isCurrentlyDark = body.classList.contains('dark-mode');
-            localStorage.setItem('darkMode', isCurrentlyDark);
-            themeToggleBtn.textContent = isCurrentlyDark ? 'Modo Claro' : 'Modo Oscuro';
-        });
-    </script>
 </body>
 </html>
