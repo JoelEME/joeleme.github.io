@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Lógica del Folio Automático para este formulario
     const folioElement = document.getElementById('folio-number');
-    
     const findHighestFolio = () => {
-        let maxFolio = parseInt(localStorage.getItem('lastInstalacionFolio') || 100);
+        let maxFolio = parseInt(localStorage.getItem('lastInstalacionFolio') || 249);
         for (let i = 0; i < localStorage.length; i++) {
             const key = localStorage.key(i);
             if (key.startsWith('instalacionBorrador_')) {
@@ -31,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Lógica para Guardar y Cargar Borrador
     const form = document.getElementById('instalacion-form');
     const guardarBtn = document.getElementById('guardarBtn');
-    const cargarBtn = document.getElementById('cargarBtn');
+    const cargarBorradorBtn = document.getElementById('cargarBorradorBtn');
     const folioToLoadInput = document.getElementById('folioToLoad');
     
     guardarBtn.addEventListener('click', () => {
@@ -47,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert(`Borrador del folio ${currentFolio} guardado exitosamente.`);
     });
 
-    cargarBtn.addEventListener('click', () => {
+    cargarBorradorBtn.addEventListener('click', () => {
         const folioToLoad = folioToLoadInput.value;
         if (!folioToLoad) {
             alert('Por favor, ingresa un número de folio para cargar.');
@@ -79,7 +78,83 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 3. Lógica del Botón de Enviar (simulación)
+    // 3. Lógica para cargar datos de evaluación
+    const cargarEvaluacionBtn = document.getElementById('cargarEvaluacionBtn');
+    const folioEvaluacionToLoadInput = document.getElementById('folioEvaluacionToLoad');
+    const tipoPropiedadSelect = document.getElementById('tipoPropiedad');
+    const casaFields = document.getElementById('casa-fields');
+    const deptoFields = document.getElementById('departamento-fields');
+    const canalizacionCasa = document.getElementById('canalizacion-casa');
+    const canalizacionDepto = document.getElementById('canalizacion-depto');
+
+    cargarEvaluacionBtn.addEventListener('click', () => {
+        const folioEvaluacion = folioEvaluacionToLoadInput.value;
+        const evaluacionData = localStorage.getItem(`evaluacionBorrador_${folioEvaluacion}`);
+
+        if (evaluacionData) {
+            const data = JSON.parse(evaluacionData);
+            
+            // Cargar Datos del Cliente
+            document.getElementById('nombre').value = data.nombre || '';
+            document.getElementById('direccion').value = data.direccion || '';
+            
+            // Cargar Tipo de Propiedad
+            if (data.tipoPropiedad) {
+                tipoPropiedadSelect.value = data.tipoPropiedad;
+                if (data.tipoPropiedad === 'casa') {
+                    casaFields.style.display = 'block';
+                    deptoFields.style.display = 'none';
+                    canalizacionCasa.style.display = 'block';
+                    canalizacionDepto.style.display = 'none';
+                    document.getElementById('ubicacionCasa').value = data.ubicacionPropuesta || '';
+                    document.getElementById('tipoConexionCasa').value = data.tipoConexionCasa || '';
+                    document.getElementById('amperajeCasa').value = data.amperajeValueCasa || '';
+                    document.getElementById('metrosCag').value = data.metrosCag || 0;
+                    document.getElementById('metrosEmtCasa').value = data.metrosEmtCasa || 0;
+                    document.getElementById('metrosSoterrado').value = data.metrosSoterrado || 0;
+                    document.getElementById('metrosPreembutidoCasa').value = data.metrosPreembutidoCasa || 0;
+                    document.getElementById('totalMetrosCasa').textContent = data.totalMetros || 0;
+                } else if (data.tipoPropiedad === 'departamento') {
+                    casaFields.style.display = 'none';
+                    deptoFields.style.display = 'block';
+                    canalizacionCasa.style.display = 'none';
+                    canalizacionDepto.style.display = 'block';
+                    document.getElementById('numEstacionamientos').value = data.numEstacionamientos || '';
+                    document.getElementById('ubicacionDepto').value = data.ubicacionPropuesta || '';
+                    document.getElementById('permisoAdmin').value = data.permisoAdmin || '';
+                    document.getElementById('ubicacionConexionDepto').value = data.ubicacionConexionDepto || '';
+                    document.getElementById('amperajeDepto').value = data.amperajeValueDepto || '';
+                    document.getElementById('metrosEscalerilla').value = data.metrosEscalerilla || 0;
+                    document.getElementById('metrosEmtDepto').value = data.metrosEmtDepto || 0;
+                    document.getElementById('metrosPreembutidoDepto').value = data.metrosPreembutidoDepto || 0;
+                    document.getElementById('totalMetrosDepto').textContent = data.totalMetros || 0;
+                }
+            }
+            alert(`Datos de evaluación del folio ${folioEvaluacion} cargados exitosamente.`);
+        } else {
+            alert(`No se encontraron datos de evaluación para el folio ${folioEvaluacion}.`);
+        }
+    });
+
+    // 4. Lógica de visibilidad del Registro Fotográfico
+    const secCertSelect = document.getElementById('sec-cert-select');
+    const secSiFotos = document.getElementById('sec-si-fotos');
+    const secNoFotos = document.getElementById('sec-no-fotos');
+    
+    secCertSelect.addEventListener('change', () => {
+        if (secCertSelect.value === 'si') {
+            secSiFotos.style.display = 'block';
+            secNoFotos.style.display = 'none';
+        } else if (secCertSelect.value === 'no') {
+            secSiFotos.style.display = 'none';
+            secNoFotos.style.display = 'block';
+        } else {
+            secSiFotos.style.display = 'none';
+            secNoFotos.style.display = 'none';
+        }
+    });
+
+    // 5. Lógica del Botón de Enviar (simulación)
     form.addEventListener('submit', (event) => {
         event.preventDefault();
         

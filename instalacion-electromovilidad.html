@@ -25,81 +25,208 @@
             <h4>Cargar Borrador Existente</h4>
             <div class="form-group">
                 <label for="folioToLoad">Ingresar Folio a Cargar:</label>
-                <input type="text" id="folioToLoad" placeholder="Ej: 101">
-                <button type="button" id="cargarBtn">Cargar Borrador</button>
+                <input type="text" id="folioToLoad" placeholder="Ej: 250">
+                <button type="button" id="cargarBorradorBtn">Cargar Borrador</button>
+            </div>
+            <h4>Cargar Datos de Evaluación</h4>
+            <div class="form-group">
+                <label for="folioEvaluacionToLoad">Ingresar Folio de Evaluación:</label>
+                <input type="text" id="folioEvaluacionToLoad" placeholder="Ej: 250">
+                <button type="button" id="cargarEvaluacionBtn">Cargar Datos de Evaluación</button>
             </div>
         </div>
 
         <form id="instalacion-form">
             <div class="section">
-                <h4>1. Datos Generales de la Instalación</h4>
+                <h4>1. Datos del Cliente</h4>
                 <div class="form-group">
-                    <label for="folioEvaluacion">Folio de Evaluación Relacionado:</label>
-                    <input type="text" id="folioEvaluacion" name="folioEvaluacion" placeholder="Ej: 250">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
                 </div>
                 <div class="form-group">
-                    <label for="fechaInstalacion">Fecha de Instalación:</label>
-                    <input type="date" id="fechaInstalacion" name="fechaInstalacion" required>
-                </div>
-                <div class="form-group">
-                    <label for="nombreInstalador">Nombre del Instalador:</label>
-                    <input type="text" id="nombreInstalador" name="nombreInstalador" required>
-                </div>
-                <div class="form-group">
-                    <label for="patenteVehiculo">Patente del Vehículo a Instalar:</label>
-                    <input type="text" id="patenteVehiculo" name="patenteVehiculo">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
                 </div>
             </div>
 
             <div class="section">
-                <h4>2. Componentes y Materiales Instalados</h4>
+                <h4>2. Tipo de Propiedad</h4>
                 <div class="form-group">
-                    <label for="cargadorInstalado">Modelo de Cargador Instalado:</label>
-                    <input type="text" id="cargadorInstalado" name="cargadorInstalado" placeholder="Ej: Wallbox Pulsar Plus">
-                </div>
-                <div class="form-group">
-                    <label for="tipoConexion">Tipo de Conexión:</label>
-                    <select id="tipoConexion" name="tipoConexion">
-                        <option value="monofasica">Monofásica</option>
-                        <option value="trifasica">Trifásica</option>
+                    <label for="tipoPropiedad">Tipo de Propiedad:</label>
+                    <select id="tipoPropiedad" name="tipoPropiedad">
+                        <option value="">Seleccione...</option>
+                        <option value="casa">Casa</option>
+                        <option value="departamento">Departamento</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="proteccionElectrica">Protección Eléctrica Instalada:</label>
-                    <input type="text" id="proteccionElectrica" name="proteccionElectrica" placeholder="Ej: Diferencial + Termomagnético">
+            </div>
+
+            <div class="section" id="detallesEvaluacionSection">
+                <h4>3. Detalles de la Evaluación</h4>
+                <div id="casa-fields" class="hidden">
+                    <div class="form-group">
+                        <label for="ubicacionCasa">Ubicación de la Instalación Propuesta:</label>
+                        <input type="text" id="ubicacionCasa" name="ubicacionCasa">
+                    </div>
+                    <div class="form-group">
+                        <label>Análisis de la Conexión Eléctrica:</label>
+                        <label for="tipoConexionCasa">Tipo de Conexión:</label>
+                        <select id="tipoConexionCasa" name="tipoConexionCasa"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amperajeCasa">Amperaje disponible:</label>
+                        <select id="amperajeCasa" name="amperajeCasa"></select>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="medidorCable">Metros de Cable Instalado:</label>
-                    <input type="number" id="medidorCable" name="medidorCable">
+
+                <div id="departamento-fields" class="hidden">
+                    <div class="form-group">
+                        <label for="numEstacionamientos">Número de Estacionamientos:</label>
+                        <input type="number" id="numEstacionamientos" name="numEstacionamientos">
+                    </div>
+                    <div class="form-group">
+                        <label for="ubicacionDepto">Ubicación de la Instalación Propuesta:</label>
+                        <input type="text" id="ubicacionDepto" name="ubicacionDepto">
+                    </div>
+                    <div class="form-group">
+                        <label for="permisoAdmin">Permiso de la Administración:</label>
+                        <select id="permisoAdmin" name="permisoAdmin"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Análisis de la Conexión Eléctrica:</label>
+                        <label for="ubicacionConexionDepto">Ubicación de la conexión:</label>
+                        <select id="ubicacionConexionDepto" name="ubicacionConexionDepto"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amperajeDepto">Amperaje disponible:</label>
+                        <select id="amperajeDepto" name="amperajeDepto"></select>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="canalizacionInstalada">Tipo de Canalización Instalada:</label>
-                    <input type="text" id="canalizacionInstalada" name="canalizacionInstalada" placeholder="Ej: Ducto EMT">
+            </div>
+
+            <div class="section" id="canalizacionSection">
+                <h4>4. Análisis de la Canalización</h4>
+                <div id="canalizacion-casa" class="hidden">
+                    <label>Tipo de Ruta y Longitud:</label>
+                    <div class="form-group">
+                        <label for="metrosCag">Ducto C.A.G.:</label>
+                        <input type="text" id="metrosCag" name="metrosCag" readonly> metros
+                    </div>
+                    <div class="form-group">
+                        <label for="metrosEmtCasa">Ducto E.M.T.:</label>
+                        <input type="text" id="metrosEmtCasa" name="metrosEmtCasa" readonly> metros
+                    </div>
+                    <div class="form-group">
+                        <label for="metrosSoterrado">Soterrado:</label>
+                        <input type="text" id="metrosSoterrado" name="metrosSoterrado" readonly> metros
+                    </div>
+                    <div class="form-group">
+                        <label for="metrosPreembutidoCasa">Ducto Preembutido:</label>
+                        <input type="text" id="metrosPreembutidoCasa" name="metrosPreembutidoCasa" readonly> metros
+                    </div>
+                    <p>Total de Metros: <span id="totalMetrosCasa">0</span></p>
+                </div>
+                <div id="canalizacion-depto" class="hidden">
+                    <label>Tipo de Ruta y Longitud:</label>
+                    <div class="form-group">
+                        <label for="metrosEscalerilla">Escalerilla:</label>
+                        <input type="text" id="metrosEscalerilla" name="metrosEscalerilla" readonly> metros
+                    </div>
+                    <div class="form-group">
+                        <label for="metrosEmtDepto">Ducto E.M.T.:</label>
+                        <input type="text" id="metrosEmtDepto" name="metrosEmtDepto" readonly> metros
+                    </div>
+                    <div class="form-group">
+                        <label for="metrosPreembutidoDepto">Ducto Preembutido:</label>
+                        <input type="text" id="metrosPreembutidoDepto" name="metrosPreembutidoDepto" readonly> metros
+                    </div>
+                    <p>Total de Metros: <span id="totalMetrosDepto">0</span></p>
                 </div>
             </div>
 
             <div class="section">
-                <h4>3. Mediciones y Verificación de la Instalación</h4>
+                <h4>5. Instalación con Certificado S.E.C.</h4>
                 <div class="form-group">
-                    <label for="medicionTension">Tensión (V):</label>
-                    <input type="number" id="medicionTension" name="medicionTension">
+                    <label for="sec-cert-select">Instalación con Certificado S.E.C.:</label>
+                    <select id="sec-cert-select" name="sec-cert-select">
+                        <option value="">Seleccione...</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
                 </div>
-                <div class="form-group">
-                    <label for="medicionCorriente">Corriente (A):</label>
-                    <input type="number" id="medicionCorriente" name="medicionCorriente">
+            </div>
+
+            <div class="section" id="registroFotografico">
+                <h4>6. Registro Fotográfico</h4>
+                <div id="sec-si-fotos" style="display: none;">
+                    <div class="form-group">
+                        <label for="fotoConexionUnion">Foto: Conexión punto de unión/empalme</label>
+                        <input type="file" id="fotoConexionUnion" name="fotoConexionUnion" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="fotoTableroAbiertoSi">Foto: Tablero abierto</label>
+                        <input type="file" id="fotoTableroAbiertoSi" name="fotoTableroAbiertoSi" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="fotoTableroCerradoSi">Foto: Tablero cerrado y etiquetado</label>
+                        <input type="file" id="fotoTableroCerradoSi" name="fotoTableroCerradoSi" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="fotoMedicionTierra">Foto: Medición de tierra</label>
+                        <input type="file" id="fotoMedicionTierra" name="fotoMedicionTierra" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="fotoCanalizacionSi">Foto: Imágenes trayecto canalización</label>
+                        <input type="file" id="fotoCanalizacionSi" name="fotoCanalizacionSi" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="fotoEtiquetadoCable">Foto: Etiquetado de cable</label>
+                        <input type="file" id="fotoEtiquetadoCable" name="fotoEtiquetadoCable" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="fotoEstacionamientoGeneral">Foto: Estacionamiento general</label>
+                        <input type="file" id="fotoEstacionamientoGeneral" name="fotoEstacionamientoGeneral" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="fotoTableroEstacionamientoAbierto">Foto: Tablero estacionamiento abierto</label>
+                        <input type="file" id="fotoTableroEstacionamientoAbierto" name="fotoTableroEstacionamientoAbierto" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="fotoTableroEstacionamientoCerrado">Foto: Tablero estacionamiento cerrado</label>
+                        <input type="file" id="fotoTableroEstacionamientoCerrado" name="fotoTableroEstacionamientoCerrado" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="fotoFachada">Foto: Fachada</label>
+                        <input type="file" id="fotoFachada" name="fotoFachada" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="fotoConfiguracionCargadorSi">Foto: Captura configuración cargador</label>
+                        <input type="file" id="fotoConfiguracionCargadorSi" name="fotoConfiguracionCargadorSi" accept="image/*">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="fotoConexionFinal">Adjuntar foto de la conexión final:</label>
-                    <input type="file" id="fotoConexionFinal" name="fotoConexionFinal">
-                </div>
-                <div class="form-group">
-                    <label for="fotoCargadorInstalado">Adjuntar foto del cargador instalado:</label>
-                    <input type="file" id="fotoCargadorInstalado" name="fotoCargadorInstalado">
+
+                <div id="sec-no-fotos" style="display: none;">
+                    <div class="form-group">
+                        <label for="fotoTablero">Foto: Tablero</label>
+                        <input type="file" id="fotoTablero" name="fotoTablero" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="fotoCanalizacion">Foto: Canalización</label>
+                        <input type="file" id="fotoCanalizacion" name="fotoCanalizacion" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="fotoConfiguracionCargadorNo">Foto: Captura configuración cargador</label>
+                        <input type="file" id="fotoConfiguracionCargadorNo" name="fotoConfiguracionCargadorNo" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="fotoCargador">Foto: Cargador</label>
+                        <input type="file" id="fotoCargador" name="fotoCargador" accept="image/*">
+                    </div>
                 </div>
             </div>
 
             <div class="section">
-                <h4>4. Checklist de Finalización</h4>
+                <h4>7. Checklist de Finalización</h4>
                 <div class="form-group">
                     <input type="checkbox" id="checklist1" name="checklist1">
                     <label for="checklist1">Limpieza del lugar finalizada</label>
@@ -115,7 +242,7 @@
             </div>
 
             <div class="section">
-                <h4>5. Notas</h4>
+                <h4>8. Notas</h4>
                 <div class="form-group">
                     <textarea id="notas" name="notas" rows="6"></textarea>
                 </div>
@@ -124,6 +251,7 @@
             <div class="actions">
                 <button type="button" id="guardarBtn">Guardar Borrador</button>
                 <button type="submit" id="enviarBtn">Enviar Reporte</button>
+                <a href="index.html" class="form-button">Volver a la página principal</a>
             </div>
         </form>
     </div>

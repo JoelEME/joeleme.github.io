@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de evaluación para electromovilidad</title>
+    <title>Formulario de Evaluación para Electromovilidad</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,10 +13,10 @@
         </div>
 
         <div class="title-section">
-            <h1 class="main-title">Formulario de evaluación para electromovilidad</h1>
+            <h1 class="main-title">Formulario de Evaluación para Electromovilidad</h1>
             <button id="theme-toggle" class="theme-toggle">Modo Oscuro</button>
         </div>
-
+        
         <div class="folio-section">
             <p><strong>Folio N°:</strong> <span id="folio-number"></span></p>
         </div>
@@ -60,200 +60,113 @@
             </div>
 
             <div class="section">
-                <h4>2. Tipo de Propiedad</h4>
+                <h4>2. Detalles de la Propiedad</h4>
                 <div class="form-group">
                     <label for="tipoPropiedad">Tipo de Propiedad:</label>
-                    <select id="tipoPropiedad" name="tipoPropiedad">
+                    <select id="tipoPropiedad" name="tipoPropiedad" required>
                         <option value="">Seleccione...</option>
                         <option value="casa">Casa</option>
                         <option value="departamento">Departamento</option>
                     </select>
                 </div>
-            </div>
-
-            <div id="casa-fields" class="section dynamic-fields hidden">
-                <h4>3. Detalles de la Evaluación (Casa)</h4>
-                <div class="form-group">
-                    <label for="ubicacionCasa">Ubicación de la Instalación Propuesta:</label>
-                    <input type="text" id="ubicacionCasa" name="ubicacionCasa">
-                </div>
-                <div class="form-group">
-                    <label for="fotoLugarCasa">Adjuntar foto del lugar:</label>
-                    <input type="file" id="fotoLugarCasa" name="fotoLugarCasa">
-                </div>
-                <div class="form-group">
-                    <label>Análisis de la Conexión Eléctrica:</label>
-                    <select id="conexionCasa" name="conexionCasa">
-                        <option value="medidor">Conexión en Medidor</option>
-                        <option value="tablero">Conexión en Tablero</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="fotoConexionCasa">Adjuntar foto del tablero o medidor:</label>
-                    <input type="file" id="fotoConexionCasa" name="fotoConexionCasa">
-                </div>
-                <div class="form-group">
-                    <label for="amperajeCasa">Amperaje disponible:</label>
-                    <select id="amperajeCasa" name="amperajeCasa">
-                        <option value="monofasico">Monofásico</option>
-                        <option value="trifasico">Trifásico</option>
-                    </select>
-                </div>
-                <div id="amperaje-options-casa" class="form-group">
-                    <select id="amperaje-value-casa" name="amperajeValueCasa"></select>
-                </div>
-            </div>
-
-            <div id="departamento-fields" class="section dynamic-fields hidden">
-                <h4>3. Detalles de la Evaluación (Departamento)</h4>
-                <div class="form-group">
-                    <label for="numEstacionamientos">Número de Estacionamientos:</label>
-                    <input type="number" id="numEstacionamientos" name="numEstacionamientos">
-                </div>
-                <div class="form-group">
-                    <label for="ubicacionDepto">Ubicación de la Instalación Propuesta:</label>
-                    <input type="text" id="ubicacionDepto" name="ubicacionDepto">
-                </div>
-                <div class="form-group">
-                    <label for="fotoLugarDepto">Adjuntar foto del lugar:</label>
-                    <input type="file" id="fotoLugarDepto" name="fotoLugarDepto">
-                </div>
-                <div class="form-group">
-                    <label for="permisoAdmin">Permiso de la Administración:</label>
-                    <select id="permisoAdmin" name="permisoAdmin">
-                        <option value="aprobado">Aprobado</option>
-                        <option value="pendiente">Pendiente</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Análisis de la Conexión Eléctrica:</label>
-                    <select id="conexionDepto" name="conexionDepto">
-                        <option value="medidor">Medidor</option>
-                        <option value="serviciosComunes">Tablero servicios comunes</option>
-                        <option value="nuevoEmpalme">Nuevo empalme</option>
-                        <option value="salaElectromovilidad">Sala electromovilidad</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="fotoConexionDepto">Adjuntar foto del tablero o medidor:</label>
-                    <input type="file" id="fotoConexionDepto" name="fotoConexionDepto">
-                </div>
-                <div class="form-group">
-                    <label for="amperajeDepto">Amperaje disponible:</label>
-                    <select id="amperajeDepto" name="amperajeDepto">
-                        <option value="monofasico">Monofásico</option>
-                        <option value="trifasico">Trifásico</option>
-                    </select>
-                </div>
-                <div id="amperaje-options-depto" class="form-group">
-                    <select id="amperaje-value-depto" name="amperajeValueDepto"></select>
-                </div>
-            </div>
-
-            <div class="section">
-                <h4>4. Análisis de la Canalización</h4>
-                <div id="canalizacion-casa" class="canalizacion-fields hidden">
+                
+                <div id="casa-fields" class="hidden">
                     <div class="form-group">
-                        <label>Tipo de Ruta y Longitud:</label>
-                        <div class="canalizacion-input">
-                            <input type="checkbox" name="rutaCasa" value="Ducto C.A.G.">
-                            <label>Ducto C.A.G.:</label>
-                            <input type="number" class="canalizacion-length" data-type="casa" name="ductoCAG"> metros
-                        </div>
-                        <div class="canalizacion-input">
-                            <input type="checkbox" name="rutaCasa" value="Ducto E.M.T.">
-                            <label>Ducto E.M.T.:</label>
-                            <input type="number" class="canalizacion-length" data-type="casa" name="ductoEMT"> metros
-                        </div>
-                        <div class="canalizacion-input">
-                            <input type="checkbox" name="rutaCasa" value="Soterrado">
-                            <label>Soterrado:</label>
-                            <input type="number" class="canalizacion-length" data-type="casa" name="soterrado"> metros
-                        </div>
-                        <div class="canalizacion-input">
-                            <input type="checkbox" name="rutaCasa" value="Ducto Preembutido">
-                            <label>Ducto Preembutido:</label>
-                            <input type="number" class="canalizacion-length" data-type="casa" name="ductoPreembutido"> metros
-                        </div>
+                        <label for="tipoConexionCasa">Tipo de Conexión:</label>
+                        <select id="amperajeCasa" name="amperajeCasa" required>
+                            <option value="monofasico">Monofásico</option>
+                            <option value="trifasico">Trifásico</option>
+                        </select>
                     </div>
-                    <p>Total de Metros: <span id="totalMetrosCasa">0</span></p>
-                </div>
-                <div id="canalizacion-depto" class="canalizacion-fields hidden">
                     <div class="form-group">
-                        <label for="pisoDesde">Desde piso:</label>
+                        <label for="amperaje-value-casa">Amperaje:</label>
+                        <select id="amperaje-value-casa" name="amperaje-value-casa"></select>
+                    </div>
+                </div>
+
+                <div id="departamento-fields" class="hidden">
+                    <div class="form-group">
+                        <label for="tipoConexionDepto">Tipo de Conexión:</label>
+                        <select id="amperajeDepto" name="amperajeDepto" required>
+                            <option value="monofasico">Monofásico</option>
+                            <option value="trifasico">Trifásico</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amperaje-value-depto">Amperaje:</label>
+                        <select id="amperaje-value-depto" name="amperaje-value-depto"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pisoDesde">Piso desde el tablero (solo departamentos):</label>
                         <input type="number" id="pisoDesde" name="pisoDesde">
-                        <label for="pisoHasta">hasta piso:</label>
-                        <input type="number" id="pisoHasta" name="pisoHasta">
-                        <small>(considerar 3 metros por piso)</small>
                     </div>
                     <div class="form-group">
-                        <label>Tipo de Ruta y Longitud:</label>
-                        <div class="canalizacion-input">
-                            <input type="checkbox" name="rutaDepto" value="Escalerilla">
-                            <label>Escalerilla:</label>
-                            <input type="number" class="canalizacion-length" data-type="depto" name="escalerilla"> metros
-                        </div>
-                        <div class="canalizacion-input">
-                            <input type="checkbox" name="rutaDepto" value="Ducto E.M.T.">
-                            <label>Ducto E.M.T.:</label>
-                            <input type="number" class="canalizacion-length" data-type="depto" name="ductoEMTDepto"> metros
-                        </div>
-                        <div class="canalizacion-input">
-                            <input type="checkbox" name="rutaDepto" value="Ducto Preembutido">
-                            <label>Ducto Preembutido:</label>
-                            <input type="number" class="canalizacion-length" data-type="depto" name="ductoPreembutidoDepto"> metros
-                        </div>
+                        <label for="pisoHasta">Piso de estacionamiento (solo departamentos):</label>
+                        <input type="number" id="pisoHasta" name="pisoHasta">
                     </div>
-                    <p>Total de Metros: <span id="totalMetrosDepto">0</span></p>
                 </div>
             </div>
 
             <div class="section">
-                <h4>5. Cargador y Equipamiento</h4>
+                <h4>3. Detalles de Canalización</h4>
+                <div id="canalizacion-casa" class="hidden">
+                    <div class="form-group">
+                        <label for="metrosExterior">Metros canalización exterior:</label>
+                        <input type="number" id="metrosExterior" name="metrosExterior" class="canalizacion-length" data-type="casa">
+                    </div>
+                    <div class="form-group">
+                        <label for="metrosInterior">Metros canalización interior:</label>
+                        <input type="number" id="metrosInterior" name="metrosInterior" class="canalizacion-length" data-type="casa">
+                    </div>
+                    <p>Total metros canalización: <span id="totalMetrosCasa">0</span></p>
+                </div>
+
+                <div id="canalizacion-depto" class="hidden">
+                    <div class="form-group">
+                        <label for="metrosZocalo">Metros de zócalo (solo departamentos):</label>
+                        <input type="number" id="metrosZocalo" name="metrosZocalo" class="canalizacion-length" data-type="depto">
+                    </div>
+                    <div class="form-group">
+                        <label for="metrosSotano">Metros de sótano (solo departamentos):</label>
+                        <input type="number" id="metrosSotano" name="metrosSotano" class="canalizacion-length" data-type="depto">
+                    </div>
+                    <p>Total metros canalización: <span id="totalMetrosDepto">0</span></p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h4>4. Cargador</h4>
                 <div class="form-group">
-                    <label for="cargador">Cargador a Instalar:</label>
+                    <label for="cargador">Cargador:</label>
                     <select id="cargador" name="cargador">
                         <option value="">Seleccione...</option>
-                        <option value="Tesla">Tesla</option>
-                        <option value="Copec Voltex">Copec Voltex</option>
-                        <option value="Volvo / Enel X">Volvo / Enel X</option>
+                        <option value="Wallbox Pulsar Plus">Wallbox Pulsar Plus</option>
+                        <option value="Wallbox Commander 2">Wallbox Commander 2</option>
+                        <option value="Wallbox Copper SB">Wallbox Copper SB</option>
                         <option value="Otro">Otro</option>
                     </select>
                 </div>
                 <div id="otro-cargador" class="form-group hidden">
-                    <label for="otroModelo">Especificar modelo:</label>
-                    <input type="text" id="otroModelo" name="otroModelo">
-                </div>
-                <div class="form-group">
-                    <label for="cargadorCliente">¿Cargador en poder del cliente?:</label>
-                    <select id="cargadorCliente" name="cargadorCliente">
-                        <option value="si">Sí</option>
-                        <option value="no">No</option>
-                    </select>
+                    <label for="otroCargador">Especificar otro cargador:</label>
+                    <input type="text" id="otroCargador" name="otroCargador">
                 </div>
             </div>
 
             <div class="section">
-                <h4>6. Notas</h4>
+                <h4>5. Notas</h4>
                 <div class="form-group">
                     <textarea id="notas" name="notas" rows="6"></textarea>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="form-group">
-                    <label for="numPresupuesto">Número de Presupuesto:</label>
-                    <input type="text" id="numPresupuesto" name="numPresupuesto">
                 </div>
             </div>
 
             <div class="actions">
                 <button type="button" id="guardarBtn">Guardar Borrador</button>
                 <button type="submit" id="enviarBtn">Enviar Reporte</button>
+                <a href="index.html" class="form-button">Volver a la página principal</a>
             </div>
         </form>
     </div>
-    
+
     <script src="evaluacion-electromovilidad.js"></script>
     <script>
         const themeToggleBtn = document.getElementById('theme-toggle');
