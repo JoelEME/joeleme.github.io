@@ -3,417 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Descargas de Juegos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        body.dark-mode {
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-        body.dark-mode .game-card {
-            background-color: #1e1e1e;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-        }
-        body.dark-mode .game-card h2 {
-            color: #fff;
-        }
-        body.dark-mode .game-card .category-links h3 {
-            border-bottom-color: #444;
-            color: #bbb;
-        }
-        body.dark-mode .game-card .category-links li {
-            background-color: #2a2a2a;
-            border-color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-        }
-        h1 {
-            text-align: center;
-            color: #1a73e8;
-            margin-bottom: 20px;
-        }
-        .controls {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        #searchBar, #regionFilter {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-            width: 300px;
-        }
-        #regionFilter {
-            width: 150px;
-        }
-        .game-card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
-        .game-card img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-        .game-card h2 {
-            margin: 0 0 10px;
-            color: #000;
-            font-size: 24px;
-            text-align: center;
-            transition: color 0.3s;
-        }
-        .game-card .details {
-            width: 100%;
-            text-align: left;
-        }
-        .game-card .details p {
-            margin: 5px 0;
-            font-size: 14px;
-        }
-        .game-card .links {
-            margin-top: 15px;
-            width: 100%;
-        }
-        .game-card a.download-button {
-            display: block;
-            background-color: #007bff;
-            color: white;
-            padding: 12px 20px;
-            text-align: center;
-            border-radius: 8px;
-            text-decoration: none;
-            margin-bottom: 10px;
-            font-weight: bold;
-            font-size: 16px;
-            transition: background-color 0.3s, transform 0.2s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .game-card a.download-button:hover {
-            background-color: #0056b3;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-        }
-        .game-card .category-links {
-            margin-top: 15px;
-            width: 100%;
-        }
-        .game-card .category-links h3 {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 5px;
-            margin-top: 20px;
-            color: #555;
-            font-size: 18px;
-            transition: border-bottom-color 0.3s, color 0.3s;
-        }
-        .game-card .category-links ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .game-card .category-links li {
-            background-color: #f9f9f9;
-            border: 1px solid #eee;
-            margin-bottom: 5px;
-            padding: 10px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background-color 0.3s, border-color 0.3s;
-        }
-        .game-card .category-links li span {
-            font-size: 14px;
-        }
-        .game-card .category-links li a {
-            background-color: #6c757d;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-            font-weight: bold;
-        }
-        .game-card .category-links li a:hover {
-            background-color: #5a6268;
-        }
-        .game-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        #darkModeToggle {
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 15px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-        #darkModeToggle:hover {
-            background-color: #555;
-        }
-        #darkModeToggle:active {
-            transform: scale(0.98);
-        }
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .loading-message {
-            text-align: center;
-            font-size: 1.2em;
-            color: #777;
-            padding: 50px;
-        }
-    </style>
+    <title>Formulario de evaluación para electromovilidad</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <img src="https://i.ibb.co/L5hYw4k/emechile.png" alt="Logo de EME Ingeniería Chile Limitada" class="logo">
+        </div>
 
-<div class="container">
-    <div class="header-container">
-        <h1>Descargas de Juegos 🎮</h1>
-        <button id="darkModeToggle">🌙 Modo Nocturno</button>
-    </div>
-    
-    <div class="controls">
-        <input type="text" id="searchBar" placeholder="Buscar juego por título...">
-        <select id="regionFilter">
-            <option value="all">Todas las Regiones</option>
-            <option value="EUR">EUR</option>
-            <option value="USA">USA</option>
-            <option value="JPN">JPN</option>
-        </select>
-    </div>
+        <h1>Formulario de evaluación para electromovilidad</h1>
 
-    <div id="gameList" class="game-list">
-        <p class="loading-message">Cargando datos de juegos...</p>
-    </div>
-</div>
-
-<script>
-    let allGamesData = {};
-
-    function formatBytes(bytes, decimals = 2) {
-        if (bytes === 0) return '0 Bytes';
-        const k = 1024;
-        const dm = decimals < 0 ? 0 : decimals;
-        const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
-        const i = Math.floor(Math.log(bytes) / Math.log(k));
-        return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
-    }
-
-    function renderGames(games) {
-        const gameListDiv = document.getElementById('gameList');
-        gameListDiv.innerHTML = '';
-        const gamesArray = Object.values(games);
-
-        if (gamesArray.length === 0) {
-            gameListDiv.innerHTML = '<p class="loading-message">No se encontraron juegos que coincidan con la búsqueda.</p>';
-            return;
-        }
-
-        gamesArray.forEach(gameGroup => {
-            const gameData = gameGroup.game;
-            if (!gameData) return;
-
-            const updates = gameGroup.updates || [];
-            const dlc = gameGroup.dlc || [];
-
-            const card = document.createElement('div');
-            card.className = 'game-card';
-
-            const cover = document.createElement('img');
-            cover.src = gameData.cover_url;
-            cover.alt = `${gameData.name} Cover`;
-
-            const title = document.createElement('h2');
-            title.textContent = gameData.name;
-
-            const detailsDiv = document.createElement('div');
-            detailsDiv.className = 'details';
-            detailsDiv.innerHTML = `
-                <p><strong>ID:</strong> ${gameData.title_id}</p>
-                <p><strong>Región:</strong> ${gameData.region}</p>
-                <p><strong>Versión Base:</strong> ${gameData.version}</p>
-                <p><strong>Tamaño Base:</strong> ${formatBytes(gameData.size)}</p>
-            `;
-
-            const linksDiv = document.createElement('div');
-            linksDiv.className = 'links';
-            const gameLink = document.createElement('a');
-            gameLink.href = gameData.url;
-            gameLink.className = 'download-button';
-            gameLink.textContent = `Descargar Juego Base (${formatBytes(gameData.size)})`;
-            gameLink.download = "";
-            linksDiv.appendChild(gameLink);
-
-            card.appendChild(cover);
-            card.appendChild(title);
-            card.appendChild(detailsDiv);
-            card.appendChild(linksDiv);
-
-            if (updates.length > 0) {
-                const updatesDiv = document.createElement('div');
-                updatesDiv.className = 'category-links';
-                updatesDiv.innerHTML = '<h3>Actualizaciones</h3>';
-                const updatesList = document.createElement('ul');
-                updates.forEach(update => {
-                    const li = document.createElement('li');
-                    li.innerHTML = `<span>Versión ${update.version}</span> <a href="${update.url}" download>Descargar (${formatBytes(update.size)})</a>`;
-                    updatesList.appendChild(li);
-                });
-                updatesDiv.appendChild(updatesList);
-                card.appendChild(updatesDiv);
-            }
-
-            if (dlc.length > 0) {
-                const dlcDiv = document.createElement('div');
-                dlcDiv.className = 'category-links';
-                dlcDiv.innerHTML = '<h3>DLCs</h3>';
-                const dlcList = document.createElement('ul');
-                dlc.forEach(d => {
-                    const li = document.createElement('li');
-                    li.innerHTML = `<span>${d.name.replace(gameData.name + " - ", "")}</span> <a href="${d.url}" download>Descargar (${formatBytes(d.size)})</a>`;
-                    dlcList.appendChild(li);
-                });
-                dlcDiv.appendChild(dlcList);
-                card.appendChild(dlcDiv);
-            }
-
-            gameListDiv.appendChild(card);
-        });
-    }
-
-    function filterAndRenderGames() {
-        const searchTerm = document.getElementById('searchBar').value.toLowerCase();
-        const regionFilter = document.getElementById('regionFilter').value;
-        const filteredGames = {};
-        for (const titleId in allGamesData) {
-            const gameGroup = allGamesData[titleId];
-            const game = gameGroup.game;
-            if (game) {
-                const matchesSearch = game.name.toLowerCase().includes(searchTerm);
-                const matchesRegion = regionFilter === 'all' || game.region === regionFilter;
-                if (matchesSearch && matchesRegion) {
-                    filteredGames[titleId] = gameGroup;
-                }
-            }
-        }
-        renderGames(filteredGames);
-    }
-
-    // New function to get the base path from the URL
-    function getBasePath() {
-        const path = window.location.pathname;
-        const repoName = path.split('/')[1];
-        // Check if the path is not a root path and is not a user/org pages
-        if (repoName && !path.endsWith('.html') && !path.endsWith('.htm')) {
-            return `/${repoName}`;
-        }
-        return '';
-    }
-
-    async function fetchData() {
-        const basePath = getBasePath();
+        <div class="folio-section">
+            <p><strong>Folio N°:</strong> <span id="folio-number"></span></p>
+        </div>
         
-        try {
-            const [gamesRes, updatesRes, dlcRes] = await Promise.all([
-                fetch(`${basePath}/GAMES.json`),
-                fetch(`${basePath}/UPDATES.json`),
-                fetch(`${basePath}/DLC.json`)
-            ]);
+        <div class="section borrador-loader">
+            <h4>Cargar Borrador Existente</h4>
+            <div class="form-group">
+                <label for="folioToLoad">Ingresar Folio a Cargar:</label>
+                <input type="text" id="folioToLoad" placeholder="Ej: 250">
+                <button type="button" id="cargarBtn">Cargar Borrador</button>
+            </div>
+        </div>
 
-            const gamesData = (await gamesRes.json()).DATA;
-            const updatesData = (await updatesRes.json()).DATA;
-            const dlcData = (await dlcRes.json()).DATA;
+        <form id="evaluacion-form">
+            <div class="section">
+                <h4>1. Datos del Cliente</h4>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+                </div>
+                <div class="form-group">
+                    <label for="comuna">Comuna:</label>
+                    <input type="text" id="comuna" name="comuna">
+                </div>
+                <div class="form-group">
+                    <label for="region">Región:</label>
+                    <input type="text" id="region" name="region">
+                </div>
+                <div class="form-group">
+                    <label for="rut">RUT:</label>
+                    <input type="text" id="rut" name="rut">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico del Cliente:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
 
-            allGamesData = {};
+            <div class="section">
+                <h4>2. Tipo de Propiedad</h4>
+                <div class="form-group">
+                    <label for="tipoPropiedad">Tipo de Propiedad:</label>
+                    <select id="tipoPropiedad" name="tipoPropiedad">
+                        <option value="">Seleccione...</option>
+                        <option value="casa">Casa</option>
+                        <option value="departamento">Departamento</option>
+                    </select>
+                </div>
+            </div>
 
-            for (const url in gamesData) {
-                const game = gamesData[url];
-                if (!allGamesData[game.title_id]) {
-                    allGamesData[game.title_id] = {
-                        game: game,
-                        updates: [],
-                        dlc: []
-                    };
-                }
-            }
-            
-            for (const url in updatesData) {
-                const update = updatesData[url];
-                if (allGamesData[update.title_id]) {
-                    allGamesData[update.title_id].updates.push(update);
-                }
-            }
+            <div id="casa-fields" class="section dynamic-fields hidden">
+                <h4>3. Detalles de la Evaluación (Casa)</h4>
+                <div class="form-group">
+                    <label for="ubicacionCasa">Ubicación de la Instalación Propuesta:</label>
+                    <input type="text" id="ubicacionCasa" name="ubicacionCasa">
+                </div>
+                <div class="form-group">
+                    <label for="fotoLugarCasa">Adjuntar foto del lugar:</label>
+                    <input type="file" id="fotoLugarCasa" name="fotoLugarCasa">
+                </div>
+                <div class="form-group">
+                    <label>Análisis de la Conexión Eléctrica:</label>
+                    <select id="conexionCasa" name="conexionCasa">
+                        <option value="medidor">Conexión en Medidor</option>
+                        <option value="tablero">Conexión en Tablero</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fotoConexionCasa">Adjuntar foto del tablero o medidor:</label>
+                    <input type="file" id="fotoConexionCasa" name="fotoConexionCasa">
+                </div>
+                <div class="form-group">
+                    <label for="amperajeCasa">Amperaje disponible:</label>
+                    <select id="amperajeCasa" name="amperajeCasa">
+                        <option value="monofasico">Monofásico</option>
+                        <option value="trifasico">Trifásico</option>
+                    </select>
+                </div>
+                <div id="amperaje-options-casa" class="form-group">
+                    <select id="amperaje-value-casa" name="amperajeValueCasa"></select>
+                </div>
+            </div>
 
-            for (const url in dlcData) {
-                const d = dlcData[url];
-                if (allGamesData[d.title_id]) {
-                    allGamesData[d.title_id].dlc.push(d);
-                }
-            }
+            <div id="departamento-fields" class="section dynamic-fields hidden">
+                <h4>3. Detalles de la Evaluación (Departamento)</h4>
+                <div class="form-group">
+                    <label for="numEstacionamientos">Número de Estacionamientos:</label>
+                    <input type="number" id="numEstacionamientos" name="numEstacionamientos">
+                </div>
+                <div class="form-group">
+                    <label for="ubicacionDepto">Ubicación de la Instalación Propuesta:</label>
+                    <input type="text" id="ubicacionDepto" name="ubicacionDepto">
+                </div>
+                <div class="form-group">
+                    <label for="fotoLugarDepto">Adjuntar foto del lugar:</label>
+                    <input type="file" id="fotoLugarDepto" name="fotoLugarDepto">
+                </div>
+                <div class="form-group">
+                    <label for="permisoAdmin">Permiso de la Administración:</label>
+                    <select id="permisoAdmin" name="permisoAdmin">
+                        <option value="aprobado">Aprobado</option>
+                        <option value="pendiente">Pendiente</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Análisis de la Conexión Eléctrica:</label>
+                    <select id="conexionDepto" name="conexionDepto">
+                        <option value="medidor">Medidor</option>
+                        <option value="serviciosComunes">Tablero servicios comunes</option>
+                        <option value="nuevoEmpalme">Nuevo empalme</option>
+                        <option value="salaElectromovilidad">Sala electromovilidad</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fotoConexionDepto">Adjuntar foto del tablero o medidor:</label>
+                    <input type="file" id="fotoConexionDepto" name="fotoConexionDepto">
+                </div>
+                <div class="form-group">
+                    <label for="amperajeDepto">Amperaje disponible:</label>
+                    <select id="amperajeDepto" name="amperajeDepto">
+                        <option value="monofasico">Monofásico</option>
+                        <option value="trifasico">Trifásico</option>
+                    </select>
+                </div>
+                <div id="amperaje-options-depto" class="form-group">
+                    <select id="amperaje-value-depto" name="amperajeValueDepto"></select>
+                </div>
+            </div>
 
-            for (const titleId in allGamesData) {
-                allGamesData[titleId].updates.sort((a, b) => {
-                    const versionA = a.version.split('.').map(Number);
-                    const versionB = b.version.split('.').map(Number);
-                    for (let i = 0; i < Math.max(versionA.length, versionB.length); i++) {
-                        const numA = versionA[i] || 0;
-                        const numB = versionB[i] || 0;
-                        if (numA > numB) return 1;
-                        if (numA < numB) return -1;
-                    }
-                    return 0;
-                });
-            }
+            <div class="section">
+                <h4>4. Análisis de la Canalización</h4>
+                <div id="canalizacion-casa" class="canalizacion-fields hidden">
+                    <div class="form-group">
+                        <label>Tipo de Ruta y Longitud:</label>
+                        <div class="canalizacion-input">
+                            <input type="checkbox" name="rutaCasa" value="Ducto C.A.G.">
+                            <label>Ducto C.A.G.:</label>
+                            <input type="number" class="canalizacion-length" data-type="casa" name="ductoCAG"> metros
+                        </div>
+                        <div class="canalizacion-input">
+                            <input type="checkbox" name="rutaCasa" value="Ducto E.M.T.">
+                            <label>Ducto E.M.T.:</label>
+                            <input type="number" class="canalizacion-length" data-type="casa" name="ductoEMT"> metros
+                        </div>
+                        <div class="canalizacion-input">
+                            <input type="checkbox" name="rutaCasa" value="Soterrado">
+                            <label>Soterrado:</label>
+                            <input type="number" class="canalizacion-length" data-type="casa" name="soterrado"> metros
+                        </div>
+                        <div class="canalizacion-input">
+                            <input type="checkbox" name="rutaCasa" value="Ducto Preembutido">
+                            <label>Ducto Preembutido:</label>
+                            <input type="number" class="canalizacion-length" data-type="casa" name="ductoPreembutido"> metros
+                        </div>
+                    </div>
+                    <p>Total de Metros: <span id="totalMetrosCasa">0</span></p>
+                </div>
+                <div id="canalizacion-depto" class="canalizacion-fields hidden">
+                    <div class="form-group">
+                        <label for="pisoDesde">Desde piso:</label>
+                        <input type="number" id="pisoDesde" name="pisoDesde">
+                        <label for="pisoHasta">hasta piso:</label>
+                        <input type="number" id="pisoHasta" name="pisoHasta">
+                        <small>(considerar 3 metros por piso)</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Tipo de Ruta y Longitud:</label>
+                        <div class="canalizacion-input">
+                            <input type="checkbox" name="rutaDepto" value="Escalerilla">
+                            <label>Escalerilla:</label>
+                            <input type="number" class="canalizacion-length" data-type="depto" name="escalerilla"> metros
+                        </div>
+                        <div class="canalizacion-input">
+                            <input type="checkbox" name="rutaDepto" value="Ducto E.M.T.">
+                            <label>Ducto E.M.T.:</label>
+                            <input type="number" class="canalizacion-length" data-type="depto" name="ductoEMTDepto"> metros
+                        </div>
+                        <div class="canalizacion-input">
+                            <input type="checkbox" name="rutaDepto" value="Ducto Preembutido">
+                            <label>Ducto Preembutido:</label>
+                            <input type="number" class="canalizacion-length" data-type="depto" name="ductoPreembutidoDepto"> metros
+                        </div>
+                    </div>
+                    <p>Total de Metros: <span id="totalMetrosDepto">0</span></p>
+                </div>
+            </div>
 
-            renderGames(allGamesData);
+            <div class="section">
+                <h4>5. Cargador y Equipamiento</h4>
+                <div class="form-group">
+                    <label for="cargador">Cargador a Instalar:</label>
+                    <select id="cargador" name="cargador">
+                        <option value="">Seleccione...</option>
+                        <option value="Tesla">Tesla</option>
+                        <option value="Copec Voltex">Copec Voltex</option>
+                        <option value="Volvo / Enel X">Volvo / Enel X</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div id="otro-cargador" class="form-group hidden">
+                    <label for="otroModelo">Especificar modelo:</label>
+                    <input type="text" id="otroModelo" name="otroModelo">
+                </div>
+                <div class="form-group">
+                    <label for="cargadorCliente">¿Cargador en poder del cliente?:</label>
+                    <select id="cargadorCliente" name="cargadorCliente">
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+            </div>
 
-        } catch (error) {
-            console.error('Error al cargar los datos:', error);
-            const gameListDiv = document.getElementById('gameList');
-            gameListDiv.innerHTML = '<p class="loading-message">Error al cargar los datos. Asegúrate de que los archivos JSON existen y son accesibles.</p>';
-        }
-    }
+            <div class="section">
+                <h4>6. Notas</h4>
+                <div class="form-group">
+                    <textarea id="notas" name="notas" rows="6"></textarea>
+                </div>
+            </div>
 
-    document.getElementById('searchBar').addEventListener('input', filterAndRenderGames);
-    document.getElementById('regionFilter').addEventListener('change', filterAndRenderGames);
+            <div class="section">
+                <div class="form-group">
+                    <label for="numPresupuesto">Número de Presupuesto:</label>
+                    <input type="text" id="numPresupuesto" name="numPresupuesto">
+                </div>
+            </div>
 
-    fetchData();
+            <div class="actions">
+                <button type="button" id="guardarBtn">Guardar Borrador</button>
+                <button type="submit" id="enviarBtn">Enviar Reporte</button>
+            </div>
+        </form>
+    </div>
 
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    darkModeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        const isDarkMode = document.body.classList.contains('dark-mode');
-        darkModeToggle.textContent = isDarkMode ? '☀️ Modo Claro' : '🌙 Modo Nocturno';
-    });
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
