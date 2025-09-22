@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Instalación de Electromovilidad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://i.ibb.co/L5hYw4k/emechile.png" alt="Logo de EME Ingeniería Chile Limitada" class="logo">
+        </div>
+
+        <div class="title-section">
+            <h1 class="main-title">Formulario de Instalación de Electromovilidad</h1>
+            <button id="theme-toggle" class="theme-toggle">Modo Oscuro</button>
+        </div>
+        
+        <div class="folio-section">
+            <p><strong>Folio N°:</strong> <span id="folio-number"></span></p>
+        </div>
+        
+        <div class="section borrador-loader">
+            <h4>Cargar Borrador Existente</h4>
+            <div class="form-group">
+                <label for="folioToLoad">Ingresar Folio a Cargar:</label>
+                <input type="text" id="folioToLoad" placeholder="Ej: 101">
+                <button type="button" id="cargarBtn">Cargar Borrador</button>
+            </div>
+        </div>
+
+        <form id="instalacion-form">
+            <div class="section">
+                <h4>1. Datos Generales de la Instalación</h4>
+                <div class="form-group">
+                    <label for="folioEvaluacion">Folio de Evaluación Relacionado:</label>
+                    <input type="text" id="folioEvaluacion" name="folioEvaluacion" placeholder="Ej: 250">
+                </div>
+                <div class="form-group">
+                    <label for="fechaInstalacion">Fecha de Instalación:</label>
+                    <input type="date" id="fechaInstalacion" name="fechaInstalacion" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombreInstalador">Nombre del Instalador:</label>
+                    <input type="text" id="nombreInstalador" name="nombreInstalador" required>
+                </div>
+                <div class="form-group">
+                    <label for="patenteVehiculo">Patente del Vehículo a Instalar:</label>
+                    <input type="text" id="patenteVehiculo" name="patenteVehiculo">
+                </div>
+            </div>
+
+            <div class="section">
+                <h4>2. Componentes y Materiales Instalados</h4>
+                <div class="form-group">
+                    <label for="cargadorInstalado">Modelo de Cargador Instalado:</label>
+                    <input type="text" id="cargadorInstalado" name="cargadorInstalado" placeholder="Ej: Wallbox Pulsar Plus">
+                </div>
+                <div class="form-group">
+                    <label for="tipoConexion">Tipo de Conexión:</label>
+                    <select id="tipoConexion" name="tipoConexion">
+                        <option value="monofasica">Monofásica</option>
+                        <option value="trifasica">Trifásica</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="proteccionElectrica">Protección Eléctrica Instalada:</label>
+                    <input type="text" id="proteccionElectrica" name="proteccionElectrica" placeholder="Ej: Diferencial + Termomagnético">
+                </div>
+                <div class="form-group">
+                    <label for="medidorCable">Metros de Cable Instalado:</label>
+                    <input type="number" id="medidorCable" name="medidorCable">
+                </div>
+                <div class="form-group">
+                    <label for="canalizacionInstalada">Tipo de Canalización Instalada:</label>
+                    <input type="text" id="canalizacionInstalada" name="canalizacionInstalada" placeholder="Ej: Ducto EMT">
+                </div>
+            </div>
+
+            <div class="section">
+                <h4>3. Mediciones y Verificación de la Instalación</h4>
+                <div class="form-group">
+                    <label for="medicionTension">Tensión (V):</label>
+                    <input type="number" id="medicionTension" name="medicionTension">
+                </div>
+                <div class="form-group">
+                    <label for="medicionCorriente">Corriente (A):</label>
+                    <input type="number" id="medicionCorriente" name="medicionCorriente">
+                </div>
+                <div class="form-group">
+                    <label for="fotoConexionFinal">Adjuntar foto de la conexión final:</label>
+                    <input type="file" id="fotoConexionFinal" name="fotoConexionFinal">
+                </div>
+                <div class="form-group">
+                    <label for="fotoCargadorInstalado">Adjuntar foto del cargador instalado:</label>
+                    <input type="file" id="fotoCargadorInstalado" name="fotoCargadorInstalado">
+                </div>
+            </div>
+
+            <div class="section">
+                <h4>4. Checklist de Finalización</h4>
+                <div class="form-group">
+                    <input type="checkbox" id="checklist1" name="checklist1">
+                    <label for="checklist1">Limpieza del lugar finalizada</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="checklist2" name="checklist2">
+                    <label for="checklist2">Pruebas de funcionamiento realizadas</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="checklist3" name="checklist3">
+                    <label for="checklist3">Instrucciones de uso entregadas al cliente</label>
+                </div>
+            </div>
+
+            <div class="section">
+                <h4>5. Notas</h4>
+                <div class="form-group">
+                    <textarea id="notas" name="notas" rows="6"></textarea>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button type="button" id="guardarBtn">Guardar Borrador</button>
+                <button type="submit" id="enviarBtn">Enviar Reporte</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="instalacion-electromovilidad.js"></script>
+    
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            themeToggleBtn.textContent = 'Modo Claro';
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isCurrentlyDark = body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isCurrentlyDark);
+            themeToggleBtn.textContent = isCurrentlyDark ? 'Modo Claro' : 'Modo Oscuro';
+        });
+    </script>
+</body>
+</html>
