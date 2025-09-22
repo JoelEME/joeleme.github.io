@@ -1,15 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Lógica del Folio Automático
     const folioElement = document.getElementById('folio-number');
-    let lastFolio = localStorage.getItem('lastFolio') || 249;
     
-    // Si la página se está cargando por primera vez (no viene de un borrador),
-    // incrementa el folio. Si se carga un borrador, el folio se mantiene.
+    // Función para encontrar el folio más alto en el almacenamiento local
+    const findHighestFolio = () => {
+        let maxFolio = parseInt(localStorage.getItem('lastFolio') || 249);
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (key.startsWith('evaluacionBorrador_')) {
+                const folioFromKey = parseInt(key.replace('evaluacionBorrador_', ''));
+                if (!isNaN(folioFromKey) && folioFromKey > maxFolio) {
+                    maxFolio = folioFromKey;
+                }
+            }
+        }
+        return maxFolio;
+    };
+
+    let currentFolio = findHighestFolio();
+    
+    // Si la página no se está cargando con un borrador, incrementa el folio.
     if (!sessionStorage.getItem('borradorCargado')) {
-        lastFolio = parseInt(lastFolio) + 1;
-        localStorage.setItem('lastFolio', lastFolio);
+        currentFolio += 1;
+        localStorage.setItem('lastFolio', currentFolio);
     }
-    folioElement.textContent = lastFolio;
+    folioElement.textContent = currentFolio;
 
     // Reinicia el indicador de borrador cargado al cerrar o recargar la página
     window.addEventListener('beforeunload', () => {
