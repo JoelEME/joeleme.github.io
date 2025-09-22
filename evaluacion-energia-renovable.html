@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Evaluación para Energía Renovable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo_y_giro.png" alt="Logo de EME Ingeniería Chile Limitada" class="logo">
+        </div>
+
+        <div class="title-section">
+            <h1 class="main-title">Formulario de Evaluación para Energía Renovable</h1>
+            <button id="theme-toggle" class="theme-toggle">Modo Oscuro</button>
+        </div>
+        
+        <div class="folio-section">
+            <p><strong>Folio N°:</strong> <span id="folio-number"></span></p>
+        </div>
+        
+        <div class="section borrador-loader">
+            <h4>Cargar Borrador Existente</h4>
+            <div class="form-group">
+                <label for="folioToLoad">Ingresar Folio a Cargar:</label>
+                <input type="text" id="folioToLoad" placeholder="Ej: 250">
+                <button type="button" id="cargarBorradorBtn">Cargar Borrador</button>
+            </div>
+            <h4>Cargar Datos de Electromovilidad</h4>
+            <div class="form-group">
+                <label for="folioElectro">Ingresar Folio de Electromovilidad:</label>
+                <input type="text" id="folioElectro" placeholder="Ej: 250">
+                <button type="button" id="cargarElectroBtn">Cargar Datos</button>
+            </div>
+        </div>
+
+        <form id="energia-renovable-form">
+            <div class="section">
+                <h4>1. Datos del Cliente y Propiedad</h4>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+                </div>
+                <div class="form-group">
+                    <label for="comuna">Comuna:</label>
+                    <input type="text" id="comuna" name="comuna">
+                </div>
+                <div class="form-group">
+                    <label for="region">Región:</label>
+                    <input type="text" id="region" name="region">
+                </div>
+                <div class="form-group">
+                    <label for="rut">RUT:</label>
+                    <input type="text" id="rut" name="rut">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico del Cliente:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipoPropiedad">Tipo de Propiedad:</label>
+                    <select id="tipoPropiedad" name="tipoPropiedad">
+                        <option value="">Seleccione...</option>
+                        <option value="casa">Casa</option>
+                        <option value="empresa">Empresa</option>
+                        <option value="industria">Industria</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="section">
+                <h4>2. Detalles de la Evaluación Energética</h4>
+                <div class="form-group">
+                    <label for="solucionPropuesta">Tipo de Solución Propuesta:</label>
+                    <select id="solucionPropuesta" name="solucionPropuesta">
+                        <option value="">Seleccione...</option>
+                        <option value="on-grid">On-Grid (Conectado a la Red)</option>
+                        <option value="off-grid">Off-Grid (Aislado con Baterías)</option>
+                        <option value="hibrido">Híbrido</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="consumoElectrico">Consumo Eléctrico Anual (kWh):</label>
+                    <input type="number" id="consumoElectrico" name="consumoElectrico">
+                </div>
+                <div class="form-group">
+                    <label for="areaDisponible">Área Disponible para Paneles (m²):</label>
+                    <input type="number" id="areaDisponible" name="areaDisponible">
+                </div>
+                <div class="form-group">
+                    <label for="orientacionTecho">Orientación del Techo:</label>
+                    <select id="orientacionTecho" name="orientacionTecho">
+                        <option value="">Seleccione...</option>
+                        <option value="norte">Norte</option>
+                        <option value="noreste">Noroeste</option>
+                        <option value="noroeste">Noroeste</option>
+                        <option value="este">Este</option>
+                        <option value="oeste">Oeste</option>
+                        <option value="sur">Sur</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inclinacionTecho">Inclinación del Techo (Grados):</label>
+                    <input type="number" id="inclinacionTecho" name="inclinacionTecho">
+                </div>
+                <div class="form-group">
+                    <label for="analisisSombras">Análisis de Sombras:</label>
+                    <textarea id="analisisSombras" name="analisisSombras" rows="4"></textarea>
+                </div>
+            </div>
+
+            <div class="section">
+                <h4>3. Componentes Propuestos</h4>
+                <div class="form-group">
+                    <label for="potenciaSistema">Potencia del Sistema (kWp):</label>
+                    <input type="number" id="potenciaSistema" name="potenciaSistema">
+                </div>
+                <div class="form-group">
+                    <label for="cantidadPaneles">Cantidad y Modelo de Paneles:</label>
+                    <input type="text" id="cantidadPaneles" name="cantidadPaneles">
+                </div>
+                <div class="form-group">
+                    <label for="inversor">Modelo de Inversor:</label>
+                    <input type="text" id="inversor" name="inversor">
+                </div>
+                <div class="form-group">
+                    <label for="baterias">Baterías (Modelo y Capacidad - Si aplica):</label>
+                    <input type="text" id="baterias" name="baterias">
+                </div>
+            </div>
+
+            <div class="section">
+                <h4>4. Notas</h4>
+                <div class="form-group">
+                    <textarea id="notas" name="notas" rows="6"></textarea>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button type="button" id="guardarBtn">Guardar Borrador</button>
+                <button type="submit" id="enviarBtn">Enviar Reporte</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="evaluacion-energia-renovable.js"></script>
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            themeToggleBtn.textContent = 'Modo Claro';
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isCurrentlyDark = body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isCurrentlyDark);
+            themeToggleBtn.textContent = isCurrentlyDark ? 'Modo Claro' : 'Modo Oscuro';
+        });
+    </script>
+</body>
+</html>
