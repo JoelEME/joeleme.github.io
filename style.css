@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 20px;
     line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
 }
 .container {
     max-width: 800px;
@@ -13,6 +14,7 @@ body {
     padding: 20px 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 .header {
     text-align: center;
@@ -21,6 +23,44 @@ body {
 .logo {
     max-width: 200px;
     height: auto;
+}
+.title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.main-title {
+    color: #004d99;
+}
+.theme-toggle {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.form-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-link {
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.form-link:hover {
+    background-color: #0056b3;
 }
 .folio-section {
     text-align: right;
@@ -102,4 +142,52 @@ button {
 }
 .borrador-loader button {
     background-color: #28a745;
+}
+
+/* Estilos para el Modo Oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+body.dark-mode .container {
+    background: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+body.dark-mode .main-title,
+body.dark-mode h4 {
+    color: #1a75ff;
+}
+body.dark-mode .folio-section {
+    color: #b0b0b0;
+}
+body.dark-mode .theme-toggle {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
+}
+body.dark-mode .form-link {
+    background-color: #1a75ff;
+}
+body.dark-mode .form-link:hover {
+    background-color: #0056b3;
+}
+body.dark-mode input[type="text"], 
+body.dark-mode input[type="email"], 
+body.dark-mode input[type="number"], 
+body.dark-mode select, 
+body.dark-mode textarea {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
+}
+body.dark-mode .section.dynamic-fields {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+body.dark-mode button {
+    background-color: #343a40;
+    color: #fff;
+}
+body.dark-mode #enviarBtn {
+    background-color: #0056b3;
 }
